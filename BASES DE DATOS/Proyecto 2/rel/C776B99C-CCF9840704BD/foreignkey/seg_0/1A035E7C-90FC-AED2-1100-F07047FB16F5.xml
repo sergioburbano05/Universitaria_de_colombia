@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1A035E7C-90FC-AED2-1100-F07047FB16F5" containerWithKeyObject="4B98C4B3-9199-F239-2D5D-609590A1EA88" localFKIndex="598DA432-F2A7-BB35-95EA-32C3234FF2DC" name="Examen_Mascota_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>059A64FC-9417-6897-9396-B02FE0B337C2</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<referredTableLongName>Mascota</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B2808316-C0A3-3C15-8161-73065B732589</referredTableID>
+<keyObject>FB83DB72-8732-839B-32E0-4025AB85F9EC</keyObject>
+<referredKeyID>FB83DB72-8732-839B-32E0-4025AB85F9EC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Mascota</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

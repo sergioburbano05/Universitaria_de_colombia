@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B98C4B3-9199-F239-2D5D-609590A1EA88" name="Examen">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>88D3DDED-983C-3380-2F4D-4BDABFAA536D</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Examen" id="7B1F3AB8-E67E-5A31-EE72-ABFB894BE1D6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>A42B2363-6DBB-C2C1-AE9A-62240EA68335</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Examen" id="E95E3BC4-862E-9CEA-023B-E7E4D5218AEE">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>DB512443-0CAC-322F-4C43-F6FCAF646D04</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resultado_Examen" id="4BB67146-0CAE-4A23-C479-C59FA9EBD972">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>12FF3DF5-A01A-D731-FBEE-E056B3FC9B7A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mascota_Id_Mascota" id="33EB591F-CA75-D4A6-27D1-5B171C7DE9FF">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>25573FC2-FCBB-2855-EFB7-2E4F6E261768</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1A035E7C-90FC-AED2-1100-F07047FB16F5" referredColumn="DE6E04CE-EABC-FEEB-560C-887A17725F2A"/>
+</associations>
+</Column>
+<Column name="Periodo_Id_Periodo" id="4EE13462-9E19-2899-C687-11C62AF5EE33">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>03045DF8-C455-0DB8-F053-53E0C1D29B1A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D7D663A-AD02-5C70-C811-C01C544A548B" referredColumn="C5457BB9-4CDB-FC00-65DC-388F9063ECF1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15174AF5-CAC5-497E-DEDF-AE4FE9C4C227" name="Examen_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>7141034F-D0E5-4C1B-C71B-811E9E22B4A9</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B1F3AB8-E67E-5A31-EE72-ABFB894BE1D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="598DA432-F2A7-BB35-95EA-32C3234FF2DC" name="Examen_Mascota_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>059A64FC-9417-6897-9396-B02FE0B337C2</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33EB591F-CA75-D4A6-27D1-5B171C7DE9FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3E849EC-6897-48E1-4FFF-4D9852BD9713" name="Examen_Periodo_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>FD96BF0A-2BBC-BD0E-43DF-17265DF193BE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EE13462-9E19-2899-C687-11C62AF5EE33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

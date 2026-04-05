@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76508FB9-A77D-77CF-EF59-87B8A7F50E61" name="Factura_Pagada">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:10:18 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Factura_Pagada" id="DAE37186-4E3A-B10F-C5EE-814B566F4BA6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:10:41 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Pago" id="F0A44DF2-CA62-59B2-D988-4362B79B7CFB">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:10:48 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Metodo_Pago" id="DDC6344F-5B2B-10E6-C95C-2CD3BCE98B99">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:11:02 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Cita" id="9D57B8FB-3EF8-8138-AAF7-C79B45865F04">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 03:00:52 UTC</createdTime>
+<generatorID>7802235F-724F-19CF-35A5-9C6B2C655235</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>7D627892-4558-ECE0-8271-652D8F22AF4D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Metodo_Pago" id="F1C20C06-6199-411A-0E7B-08DD3A1A8785">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:05:19 UTC</createdTime>
+<generatorID>D2A06334-17C1-8205-DC77-8971C4DA8D2E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>D43A8A52-7A04-3C0C-F4EB-5ED279D22711</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="914A9323-D09C-7BDF-1FA5-E8A7BEB83C26" name="Factura_Pagada PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:11:00 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DAE37186-4E3A-B10F-C5EE-814B566F4BA6</attributeRef>
+<attributeRef>F1C20C06-6199-411A-0E7B-08DD3A1A8785</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

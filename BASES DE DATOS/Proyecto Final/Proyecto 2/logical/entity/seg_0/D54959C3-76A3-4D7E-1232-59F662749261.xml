@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D54959C3-76A3-4D7E-1232-59F662749261" name="Examen">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:10:33 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Examen" id="CF88ABC6-1A19-5727-D3EE-883F458445DC">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:10:37 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Periodo" id="C0124EC9-1E3A-25BD-84F4-7487159D9F86">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:14:45 UTC</createdTime>
+<generatorID>5652C2A5-D02D-0C3C-77BC-CBBEB895D2BB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>9F3FC934-3887-E1FE-0D02-6FEFE348FF13</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Mascota" id="FF18F1EA-2E9D-06C6-12A7-229F7E5D134B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:14:53 UTC</createdTime>
+<generatorID>56B6BA3B-8F88-0501-ED15-65B513381316</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>45A1C672-E263-6EAF-C1CC-357A8686A044</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7EC06F7D-0F60-BF04-6854-4602B1D39B0F" name="Examen PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:10:45 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CF88ABC6-1A19-5727-D3EE-883F458445DC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="53609CB3-9253-6428-863F-D0B3FA4BE7D9" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:35:58 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<newElementsIDs>C0124EC9-1E3A-25BD-84F4-7487159D9F86,FF18F1EA-2E9D-06C6-12A7-229F7E5D134B</newElementsIDs>
+<usedAttributes>
+<attributeRef>C0124EC9-1E3A-25BD-84F4-7487159D9F86</attributeRef>
+<attributeRef>FF18F1EA-2E9D-06C6-12A7-229F7E5D134B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

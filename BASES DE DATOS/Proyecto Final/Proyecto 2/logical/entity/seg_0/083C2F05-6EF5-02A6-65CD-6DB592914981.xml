@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="083C2F05-6EF5-02A6-65CD-6DB592914981" name="Municipio">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:06 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Municipio" id="C45CC962-123E-6EFB-79E2-CB4C596196DE">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:11 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion_Municipio" id="EBEE7F1C-B4F6-A35D-B9E5-BB291517B90B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:22 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Departamento" id="5904D2DD-8E95-3098-9C03-5D4D2202088E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:14:07 UTC</createdTime>
+<generatorID>49321EE6-FE40-6FEB-FD51-787413216EA4</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>F0B13A4C-859C-37E5-7306-31C5388BB9BE</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C547621-3D6D-AE7C-7A96-BE51F783CCC2" name="Municipio PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:21 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C45CC962-123E-6EFB-79E2-CB4C596196DE</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1FBDCCEF-58AF-252E-09F4-A0B1112B6104" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:38:26 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<newElementsIDs>5904D2DD-8E95-3098-9C03-5D4D2202088E,EBEE7F1C-B4F6-A35D-B9E5-BB291517B90B</newElementsIDs>
+<usedAttributes>
+<attributeRef>5904D2DD-8E95-3098-9C03-5D4D2202088E</attributeRef>
+<attributeRef>EBEE7F1C-B4F6-A35D-B9E5-BB291517B90B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

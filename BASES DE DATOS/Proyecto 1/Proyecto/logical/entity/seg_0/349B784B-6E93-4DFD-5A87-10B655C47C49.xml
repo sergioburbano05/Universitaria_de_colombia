@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="349B784B-6E93-4DFD-5A87-10B655C47C49" name="Detalle_Tratamiento">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:45:35 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Detalle_Tratamiento" id="855A11F5-6301-FF7B-90AA-3F774820A875">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:45:42 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Tratamiento" id="06EA8072-78C4-382C-BF5C-89508186E9A3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:02:56 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Inicio" id="4410A3E8-04FF-0DBF-84FB-6959845BA126">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:03:01 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Fin" id="98999AEB-385B-CEC0-E437-4F9235DAB94A">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:03:05 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comentarios" id="E7E0C4CA-0D79-4A58-8E1D-9F6E0D0FABF2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:03:50 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tratamiento1" id="A99DF184-D654-97EB-7794-82EA101ED5B5">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:56:49 UTC</createdTime>
+<generatorID>EEDE8E33-F51F-7A66-D510-76ADD8DE43AF</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>5B0F9830-9A06-C26E-66CE-084401A61192</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C3BBE6C-1014-33D6-04CA-CAF8834C1185" name="Tratamiento PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:45:51 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>855A11F5-6301-FF7B-90AA-3F774820A875</attributeRef>
+<attributeRef>A99DF184-D654-97EB-7794-82EA101ED5B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

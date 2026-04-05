@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F38D3C8-218B-6605-415F-8CD515CC4B25" name="Propietario">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>4473AAB1-ABCB-0C4B-C41D-DFA6CB283B34</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Propietario" id="D3FAB18B-A566-6342-3CDB-1A2346BB108C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>B59013C5-2CB8-CE67-289A-0D5F2CBA433B</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Cedula" id="CA1C7C37-7B3F-5375-5713-EF85A85727D0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>0636F9E9-F2B3-9633-7319-C93E43A12BAA</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cedula" id="A4E2798E-8EC5-8D71-5BD9-DC90221CE073">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>D87F580B-F6CD-C6FC-8640-4363FD074772</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="FC75F182-AB41-8656-BC0B-2C6CFF23CA4A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>653FC137-061E-D726-6163-25AE6B5DC7E1</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="1455BBEE-CFDA-1F97-5265-3CF3B709F6B8">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>CBC48DAE-57B9-8A37-8A02-D4B5FFA5E8F1</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E584A844-AC30-5CC0-FE83-F4A580DD7FA1" name="Propietario_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>7AD6FC8E-8CDF-852A-863A-AE589EA5EBFE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3FAB18B-A566-6342-3CDB-1A2346BB108C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D4F89B8-DDC6-1B79-7B5E-BF91EF1D122A" name="Propietario_Tipo_Cedula_Cedula_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>E004F743-1BDA-4E75-C18A-AAFC6C667D9A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA1C7C37-7B3F-5375-5713-EF85A85727D0"/>
+<colUsage columnID="A4E2798E-8EC5-8D71-5BD9-DC90221CE073"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

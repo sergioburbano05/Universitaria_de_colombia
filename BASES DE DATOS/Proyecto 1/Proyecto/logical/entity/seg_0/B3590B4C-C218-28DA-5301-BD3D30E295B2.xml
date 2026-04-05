@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3590B4C-C218-28DA-5301-BD3D30E295B2" name="Estadia_Corral">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:47:16 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Estadia" id="BAA48E9E-8879-B969-0183-F080F2B26E49">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:47:26 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Ingreso" id="BB8B7B1B-045E-E315-30FB-2B3297482596">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:06:53 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Salida" id="6DD3AF74-2DC7-71F2-FCBC-51E92FBA5325">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 23:07:00 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Comentarios_Adicionales" id="9A5E9648-2536-A942-168A-FB885A4AE84F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:29:00 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Corral" id="2D032A1A-CAE3-0069-AA33-35B356C67A36">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:06:17 UTC</createdTime>
+<generatorID>4F900D03-7640-FAAA-C82B-816F371CEB9F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>58B24548-AAE7-613C-DC08-0ADD87B6588D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estado_Corral" id="D6B8CDD7-ED2B-3D69-C574-AFD275261482">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:55:26 UTC</createdTime>
+<generatorID>4F900D03-7640-FAAA-C82B-816F371CEB9F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>92DFF084-BDD8-0F29-1CFD-CD7DF1B8BC12</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C066D78-F4E6-CA2D-A9F3-9C08B17D7EC5" name="Corral PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:47:34 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BAA48E9E-8879-B969-0183-F080F2B26E49</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

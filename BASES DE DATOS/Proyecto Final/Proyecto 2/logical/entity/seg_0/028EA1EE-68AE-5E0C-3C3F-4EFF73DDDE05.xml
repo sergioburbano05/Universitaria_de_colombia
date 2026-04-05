@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="028EA1EE-68AE-5E0C-3C3F-4EFF73DDDE05" name="Propietario">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:03:45 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Propietario" id="F790ED90-2BE4-1970-B674-8D259FBE6D03">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:03:53 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cedula" id="21650278-2374-478E-5582-512FD0C3A6D6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:04:15 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Completo" id="73CC59A4-4DA1-7088-B68B-2C34D4B21C1B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:46:55 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9802F57B-976A-8E6B-C424-9FB16C135BAA" name="Propietario PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:04:05 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F790ED90-2BE4-1970-B674-8D259FBE6D03</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="19D155BC-CC51-1652-20CE-A911A40BD264" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:12:34 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<newElementsIDs>21650278-2374-478E-5582-512FD0C3A6D6</newElementsIDs>
+<usedAttributes>
+<attributeRef>21650278-2374-478E-5582-512FD0C3A6D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

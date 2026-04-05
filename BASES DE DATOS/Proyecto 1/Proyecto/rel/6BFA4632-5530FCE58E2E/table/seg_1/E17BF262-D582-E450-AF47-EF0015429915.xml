@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E17BF262-D582-E450-AF47-EF0015429915" name="Corral">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3FA1A6BD-8EC8-B594-AB59-EA2138B5739B</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Corral" id="804572D1-F7E2-FE36-A0E0-DCD8074546C0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>58B24548-AAE7-613C-DC08-0ADD87B6588D</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Capacidad" id="F1E924C7-3111-150B-8454-162FF1E0B6A1">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E52AAB67-92FD-4955-C6E5-E8970C029A17</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado_Corral_Id_Estado_Corral" id="0672A05C-0DE0-DF00-915F-D395A5AD9097">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>92DFF084-BDD8-0F29-1CFD-CD7DF1B8BC12</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4C08732-0250-ABA3-9CA0-C90994529A5B" referredColumn="86A243B3-07A7-0096-DF48-B37206DCBD2A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2F46F33-3A74-9076-EEBB-B7F6829E41BB" name="Corral_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3D8BA401-F2C4-7936-E87D-54E9BCDE22AF</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="804572D1-F7E2-FE36-A0E0-DCD8074546C0"/>
+<colUsage columnID="0672A05C-0DE0-DF00-915F-D395A5AD9097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9C44625-792B-4DCD-E499-2CC801987B64" name="Corral_Estado_Corral_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>0ACDEF3E-9F31-8C54-D90A-FC78A7C05361</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0672A05C-0DE0-DF00-915F-D395A5AD9097"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

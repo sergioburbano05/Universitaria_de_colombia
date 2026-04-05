@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CA7BF12-69A5-626F-1823-CBB945246CB1" name="Tipo_Mascota">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:39:35 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Tipo" id="167EB9E3-FD88-7B76-A1C7-97E4F9FEEB6D">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:39:43 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion_Tipo" id="F7457276-9023-C85A-E450-0CEE19EDB372">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:39:51 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="426B8A72-1459-2805-6E60-AAC88DCF97E4" name="Tipo_Mascota PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:40:08 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>167EB9E3-FD88-7B76-A1C7-97E4F9FEEB6D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="6BD99A71-9916-A5AB-F10C-DE0C98C0BD9A" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:00:48 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<newElementsIDs>F7457276-9023-C85A-E450-0CEE19EDB372</newElementsIDs>
+<usedAttributes>
+<attributeRef>F7457276-9023-C85A-E450-0CEE19EDB372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

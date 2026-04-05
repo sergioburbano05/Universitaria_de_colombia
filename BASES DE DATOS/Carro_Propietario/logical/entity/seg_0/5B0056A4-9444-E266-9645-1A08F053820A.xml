@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B0056A4-9444-E266-9645-1A08F053820A" name="Carro">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:00:24 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="D3F5736B-7E5D-E74C-87F0-6C1DDBAEFBC1">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:02:34 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Placa" id="BD68E1B4-7EE2-264F-6530-9E59864B56E1">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:02:46 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Modelo" id="328495ED-7F58-65DB-A249-9991508F0EC3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:02:50 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="6C88F417-D89D-B82A-EBBB-5EFD144AC465">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:06:36 UTC</createdTime>
+<generatorID>1A689CC7-0F43-29AA-C876-6A4D09EE7D1C</generatorID>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<referedAttribute>81140086-FADE-2247-1AF6-20E817EE8BBD</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id2" id="80A97452-B023-5BA9-1CE9-C30E306D7C48">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:14:23 UTC</createdTime>
+<generatorID>9A75E962-F4DD-2568-CD9A-A5115B85DE8B</generatorID>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<referedAttribute>5484C25F-4B9E-91EE-AF3D-F20EF4114F4A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id11" id="C214E6D2-78DE-0B96-B9B6-7E8AB6501E54">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:16:30 UTC</createdTime>
+<generatorID>9A75E962-F4DD-2568-CD9A-A5115B85DE8B</generatorID>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<referedAttribute>80421258-E249-FE61-E8B6-ECAD4AD9CFDF</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA928370-7661-D674-C48D-597B1CA3FD95" name="Carro PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:03:13 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D3F5736B-7E5D-E74C-87F0-6C1DDBAEFBC1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="16CF756A-F9A7-8355-DE80-B76729CB57E6" name="Key_2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:11:15 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<newElementsIDs>BD68E1B4-7EE2-264F-6530-9E59864B56E1</newElementsIDs>
+<usedAttributes>
+<attributeRef>BD68E1B4-7EE2-264F-6530-9E59864B56E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

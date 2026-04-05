@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="D178F9DD-DD8A-91C7-8DC5-187E5BBEC6A7" name="Tipo_Mascota">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>6CA7BF12-69A5-626F-1823-CBB945246CB1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Tipo" id="CA0C18D8-536B-A6FE-D487-2A4281A917A3">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>167EB9E3-FD88-7B76-A1C7-97E4F9FEEB6D</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion_Tipo" id="7ED50888-17D4-957D-BBD0-23FDF5BD6DE6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>F7457276-9023-C85A-E450-0CEE19EDB372</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F650BD3-BE01-2179-7D62-66FBE894132F" name="Tipo_Mascota_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>426B8A72-1459-2805-6E60-AAC88DCF97E4</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA0C18D8-536B-A6FE-D487-2A4281A917A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE04086B-E9D6-08D8-E707-2FC4381235C1" name="Tipo_Mascota_Descripcion_Tipo_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>6BD99A71-9916-A5AB-F10C-DE0C98C0BD9A</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ED50888-17D4-957D-BBD0-23FDF5BD6DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

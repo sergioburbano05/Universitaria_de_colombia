@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="3C53FA61-7A0D-5DBE-9A1F-C9DE7C9994D5" name="Propietario">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>1D034236-FE42-5B08-5038-F4DC15A70F61</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Propietario" id="085CB42D-EA88-FEAF-F66E-4B1B85FFBF51">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>B767D6E6-A64C-7A55-1152-BBBC394856D6</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cedula" id="F44E5844-9A9F-A4D1-15AF-E3C5937AFDD7">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E2F656E4-FB67-0437-BC22-00874DF43FA5</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Cedula" id="1A6796A9-4FD4-8430-A99B-D2792538A615">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>4DA0C60E-9CDD-70DD-DCF3-7250D2683323</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="D5FB80D9-8A81-CB82-DBF9-C76D2D20EE9C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E98680EC-B2E0-2CA2-9FEC-468F63E45EE9</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="53EF7375-D696-A337-0B39-6B5F7950F859">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>EE5A2B82-7C4A-B149-7509-502C056C9690</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="9F67518D-1DCD-1E8D-A054-1685F1E0CE82">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>1178562A-73EB-9C21-DAB4-99B4DF25AE5C</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tel_Casa" id="DD32B635-F259-CC35-1402-EF5F7B0A9E2D">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>F9560D10-554E-66F4-FDC3-42A21234B3E3</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clinica_Id_Clinica" id="6D40D2DB-A85F-E8E8-1802-960B1EE2D538">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>81E24BC9-7C34-A9B6-C13B-D5808C51C99A</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7923F921-9232-2BAD-FB78-A45EFC32F4B1" referredColumn="A3254FC6-68D1-20C7-786B-5883191E43A3"/>
+</associations>
+</Column>
+<Column name="Clinica_Ciudad_Id_Ciudad" id="B7BAB1CF-7E2F-1F69-9BF5-40E726F6944F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>D76C3801-5D66-0DEA-6A84-91F1C8BA6811</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7923F921-9232-2BAD-FB78-A45EFC32F4B1" referredColumn="5655A9E0-1750-9D0F-A00B-11CE2A751ED5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E4BD47F-E8E4-5AB1-2150-7A7811933288" name="Propietario_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>28572295-4901-1D36-BDC4-6273446F8CB8</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="085CB42D-EA88-FEAF-F66E-4B1B85FFBF51"/>
+<colUsage columnID="6D40D2DB-A85F-E8E8-1802-960B1EE2D538"/>
+<colUsage columnID="B7BAB1CF-7E2F-1F69-9BF5-40E726F6944F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D80335EE-B9F1-F036-6A25-D65C726035A6" name="Propietario_Cedula_Tipo_Cedula_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>FF47CFB4-46F1-1F28-A273-64AA1A72833E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F44E5844-9A9F-A4D1-15AF-E3C5937AFDD7"/>
+<colUsage columnID="1A6796A9-4FD4-8430-A99B-D2792538A615"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4E5F50A-88DD-D5F0-7300-7DE973D6EAB1" name="Propietario_Clinica_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>9326809A-3953-04DF-590F-514F61BA1ACD</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D40D2DB-A85F-E8E8-1802-960B1EE2D538"/>
+<colUsage columnID="B7BAB1CF-7E2F-1F69-9BF5-40E726F6944F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

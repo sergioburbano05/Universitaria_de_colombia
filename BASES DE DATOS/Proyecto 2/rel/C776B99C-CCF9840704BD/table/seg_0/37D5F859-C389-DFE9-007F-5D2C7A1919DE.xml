@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37D5F859-C389-DFE9-007F-5D2C7A1919DE" name="Municipio">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>AB7AD018-2949-A559-4FAF-214426034121</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Municipio" id="A5DA611C-ECE5-73D4-895C-13208FC2D087">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>7444C009-9EF4-614D-35F9-2A9651212E16</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion_Municipio" id="0DB6B25C-B8CD-003B-B411-A906D03C00CD">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>BC93F06C-9662-174E-602E-052E091198C1</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento_Id_Departamento" id="83D2BA97-DC6D-1F12-A09A-0C0DFD5549C4">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>81D625BB-5A4C-F5FE-EFEB-B8E459881A45</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59E55533-27CC-578C-3B0F-FE623B844EEC" referredColumn="364FB560-D82F-ACE0-9C02-8EA94FA68CF7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D3C658A-CD3F-3BD0-E0FB-362C2EF44307" name="Municipio_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>527A0417-7293-6746-9BD2-14A6BB042078</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5DA611C-ECE5-73D4-895C-13208FC2D087"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DE692F5-C12D-E756-B7CF-749A59A8E2BA" name="Municipio_Departamento_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>605A9EA5-2F30-A341-D239-EA4EE8D8CEC6</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D2BA97-DC6D-1F12-A09A-0C0DFD5549C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

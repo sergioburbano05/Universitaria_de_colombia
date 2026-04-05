@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECC9AA0B-D58F-A21B-29A4-37932CA860D0" name="Tratamiento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:52:07 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Tratamiento" id="5B0F9830-9A06-C26E-66CE-084401A61192">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:52:17 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="D7413DAF-E5AF-93A3-CB27-70B18D12A530">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:53:00 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Costo" id="548715F7-B5F9-8219-28FB-8A76BD0884E0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:53:08 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F72E83CC-3B79-0BFA-BE78-AFA7D37D4CBF" name="Detalle_Tratamiento PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:52:23 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B0F9830-9A06-C26E-66CE-084401A61192</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="64497255-EB89-C7CE-412B-F1FD585C8DCE" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:01:34 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<newElementsIDs>D7413DAF-E5AF-93A3-CB27-70B18D12A530</newElementsIDs>
+<usedAttributes>
+<attributeRef>D7413DAF-E5AF-93A3-CB27-70B18D12A530</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

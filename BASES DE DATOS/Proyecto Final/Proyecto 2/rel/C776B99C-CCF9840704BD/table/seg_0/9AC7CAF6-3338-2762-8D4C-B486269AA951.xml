@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9AC7CAF6-3338-2762-8D4C-B486269AA951" name="Periodo">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>243C1A4A-D6EA-9D1E-A3EF-13F2E440078B</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Periodo" id="CA4982E5-2200-A326-F1F9-F8BC6CD0557C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>9F3FC934-3887-E1FE-0D02-6FEFE348FF13</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="39A2214B-0A85-6785-0824-E352078C6420">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>9771F02F-E0C4-D9B5-D1D6-84734A7679F8</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0FA3944-F129-9134-DC3D-305C4592FCCE" name="Periodo_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>E41BFE9A-ECFF-F785-E139-E65D7657FAF5</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA4982E5-2200-A326-F1F9-F8BC6CD0557C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB9F288D-CE1B-6341-0DB3-76E05EAAFB21" name="Periodo_Fecha_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>CB193D5D-3570-1E9C-A12C-4F4FE2BEBE7C</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39A2214B-0A85-6785-0824-E352078C6420"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00A105D6-1041-1C47-470D-8B6670B9049F" name="Examen_Tratamiento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:09:32 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Examen_Tratamiento" id="78189A2F-58C0-6293-6671-61D92486FC9A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:09:40 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Tratamiento" id="209EBA6C-177D-E678-59DB-AD346B20CADA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:09:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tratamiento" id="3D19DD83-DA7B-20DC-5742-1B1A388627C9">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:15:09 UTC</createdTime>
+<generatorID>17ADAC6C-423F-EF31-9B04-60B4882F4D80</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>B8190F08-6188-654E-E109-E20560B45BC7</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Examen" id="445A855F-844E-EFC0-DFE0-0B17BF3444E7">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:15:39 UTC</createdTime>
+<generatorID>1E693E3A-1DD9-76D4-85A6-715EFEFFB00E</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>CF88ABC6-1A19-5727-D3EE-883F458445DC</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3FFE0FF3-C9D1-3EBC-C6A8-29C8B23B484E" name="Examen_Tratamiento PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:09:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78189A2F-58C0-6293-6671-61D92486FC9A</attributeRef>
+<attributeRef>3D19DD83-DA7B-20DC-5742-1B1A388627C9</attributeRef>
+<attributeRef>445A855F-844E-EFC0-DFE0-0B17BF3444E7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4720ED50-D6A2-10BE-2D9C-94FEBBE01170" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:41:40 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<newElementsIDs>3D19DD83-DA7B-20DC-5742-1B1A388627C9,445A855F-844E-EFC0-DFE0-0B17BF3444E7</newElementsIDs>
+<usedAttributes>
+<attributeRef>3D19DD83-DA7B-20DC-5742-1B1A388627C9</attributeRef>
+<attributeRef>445A855F-844E-EFC0-DFE0-0B17BF3444E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

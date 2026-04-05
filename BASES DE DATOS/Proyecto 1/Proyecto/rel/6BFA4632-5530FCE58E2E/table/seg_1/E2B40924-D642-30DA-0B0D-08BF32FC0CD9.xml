@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E2B40924-D642-30DA-0B0D-08BF32FC0CD9" name="Ciudad">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>5F69CC34-8DBE-2CA6-D288-EA3D64967CB2</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Ciudad" id="5ED13553-C8B6-3A39-9317-B4806AFC2B81">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>87CFE339-8211-2CBB-BBB0-B78AECE58E4C</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ciudad" id="6B78A654-20E6-4E39-E91B-5C14C093688F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>C12EE69D-85E8-1506-CBDF-C2E4B9564A0A</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento" id="0565EB28-E3A7-8BC5-1FB5-6C1E0CA96F4F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>4F3426D4-959F-380B-FFF5-C0CBE43D7453</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="564B3FFD-621E-B7D0-C5C6-7BFDB9D63CAF" name="Ciudad_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>35C30407-8998-968F-E1C3-E4CD1AE1F7C1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ED13553-C8B6-3A39-9317-B4806AFC2B81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39E18AA1-7186-078A-653F-911618019B1E" name="Ciudad_Ciudad_Departamento_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>8020EC67-F1FC-F200-03F0-84809DACD57E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B78A654-20E6-4E39-E91B-5C14C093688F"/>
+<colUsage columnID="0565EB28-E3A7-8BC5-1FB5-6C1E0CA96F4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

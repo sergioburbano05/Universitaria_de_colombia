@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="C3A6DE0E-ED51-1B5B-D9C3-13C228A812F2" name="Metodo_Pago">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>5426218F-0C27-8050-6B7E-25A5D57D9BC8</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Metodo_Pago" id="11CCC5D2-7C55-E0F6-5D5D-84CC08BA3F5A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>D43A8A52-7A04-3C0C-F4EB-5ED279D22711</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="12CA6225-98A4-3506-5827-91A40275FB8E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>6A1BB3EA-7F54-26E1-C3EE-FB930BF1E213</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E940A80-7295-EF3F-C168-41B7FBBA4917" name="Metodo_Pago_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>A6B7C47C-170B-D0F6-1651-8F93B20D9713</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11CCC5D2-7C55-E0F6-5D5D-84CC08BA3F5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A738C0F9-2750-BB3C-594C-3531EA737ED3" name="Metodo_Pago_Descripcion_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>884BAA6C-DD69-F1E6-606C-CEF228E92B07</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12CA6225-98A4-3506-5827-91A40275FB8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

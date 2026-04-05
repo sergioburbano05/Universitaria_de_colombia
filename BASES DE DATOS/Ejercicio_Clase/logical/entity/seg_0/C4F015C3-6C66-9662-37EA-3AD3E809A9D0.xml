@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4F015C3-6C66-9662-37EA-3AD3E809A9D0" name="Proyecto">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:52:32 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Proyecto" id="1DBFE7F8-B896-D952-C67E-D72875F11EF5">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:53:26 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Proyecto" id="292A226C-985F-8A5C-56A4-823C1AC439E3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:53:45 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cedula" id="AD4BE61E-E65A-13BE-166B-CA20BF6DC2DE">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:08:55 UTC</createdTime>
+<generatorID>72A94CE6-58DA-CF1E-F846-ED557153F301</generatorID>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<referedAttribute>DAE01AF9-F052-887D-6F28-5C5D3CC52EF1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Cedula" id="ABA153C7-3FBC-FC3C-7746-57FA8E663E2D">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:08:55 UTC</createdTime>
+<generatorID>72A94CE6-58DA-CF1E-F846-ED557153F301</generatorID>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<referedAttribute>D2BBD417-720E-DD08-CB47-683657C043CB</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="153A6B6C-FCA5-44AB-E2AA-6941B4B588CA" name="Proyectos PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:53:54 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1DBFE7F8-B896-D952-C67E-D72875F11EF5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

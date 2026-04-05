@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="8B917F51-C1AA-B545-437F-16BE58E72278" name="Droga" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="15BE589B-1602-ACB5-43BC-E7118AB53546" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="7DB13560-4968-5C19-D4FE-B232384AA9B7" name="Paciente" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="15BE589B-1602-ACB5-43BC-E7118AB53546" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="8499DB92-3B60-6F18-5CC6-39BAE9CD7CDC" name="Droga_Paciente_FK" seqName="seg_0" containerID="8B917F51-C1AA-B545-437F-16BE58E72278" refContainerID="7DB13560-4968-5C19-D4FE-B232384AA9B7" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="15BE589B-1602-ACB5-43BC-E7118AB53546" propertySourceId="7DB13560-4968-5C19-D4FE-B232384AA9B7" propertyTargetId="8B917F51-C1AA-B545-437F-16BE58E72278"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

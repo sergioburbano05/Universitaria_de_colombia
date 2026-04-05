@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="F5870DC8-BD13-43D9-AEB3-AA0E75A1E181" name="Suministros_Quirurgicos">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>6DCD3ACB-DD0D-3222-E94F-8B6D5BB90248</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Sum_Quir" id="21509A7B-B020-BDD5-0E82-FE95A495B0D2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>0CA9FE61-4880-C385-51A5-07E3DC5A1933</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="C2EBCEB2-1CA0-8709-2360-74F488E2995B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>704723D2-8B96-BA8E-6028-9815F0A4A4E8</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="825DB890-B1A6-14FD-09E3-39B7A2BC172F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>2DC87277-3B0C-C9EB-49A8-A1F6DD718A2E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad_Stock" id="C72E631D-C560-2F09-110E-EEF3AFA2A555">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>ED4AB519-F1DA-F0D5-24D1-7E984D5995D3</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nivel_Reorden" id="C952F5F1-82AC-07D5-FEE3-D050A3B76E61">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3F61D4C4-F90F-A38E-0C18-702CB41FE2D4</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad_Repedida" id="5A11E829-CDBD-69FB-5305-AE39614135A5">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>8242E302-247B-EED0-998B-4CA549BACA64</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo" id="7E9C64DC-CAAE-6CA9-E2B6-076F74ED9B12">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>F4E588A3-9BB1-F579-760B-39655825C688</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clinica_Id_Clinica" id="07DA264D-2752-BF5E-B3FE-3EF572D83424">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>95924E21-3277-2D0F-D335-CB7B5D3B01AD</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="675505C1-66B9-EF50-C774-15077F1F10C8" referredColumn="A3254FC6-68D1-20C7-786B-5883191E43A3"/>
+</associations>
+</Column>
+<Column name="Clinica_Ciudad_Id_Ciudad" id="A4FEF422-1680-9BAC-73D3-FE873F3D636E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>BD35C85E-7C10-A3AE-B623-D1AB9E8C8FF7</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="675505C1-66B9-EF50-C774-15077F1F10C8" referredColumn="5655A9E0-1750-9D0F-A00B-11CE2A751ED5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAC3AE4B-4F47-2C7F-E686-564DB15390D5" name="Suministros_Quirurgicos_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>A96B614E-7C6E-17D8-3C8E-6C863A6011F2</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21509A7B-B020-BDD5-0E82-FE95A495B0D2"/>
+<colUsage columnID="07DA264D-2752-BF5E-B3FE-3EF572D83424"/>
+<colUsage columnID="A4FEF422-1680-9BAC-73D3-FE873F3D636E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="68B4287B-7FC0-3962-A29C-65B24AE7C8B8" name="Suministros_Quirurgicos_Clinica_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>2DFB039A-0418-8590-280C-5DBFA4D98CEA</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07DA264D-2752-BF5E-B3FE-3EF572D83424"/>
+<colUsage columnID="A4FEF422-1680-9BAC-73D3-FE873F3D636E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DB13560-4968-5C19-D4FE-B232384AA9B7" name="Paciente">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>A3F120A1-0598-F584-A5AA-9AFA28CD7D89</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="44684289-BB5D-8766-D459-4CEAEA907315">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>F0111840-6DAF-8589-28B6-0FFAAEFD23DA</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="8165B059-B9B2-C110-5A0B-60C9C48F308C">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>740125F6-32DF-C224-7828-B271D6E4C98A</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cedula" id="7176F2E9-54B5-5C2C-099D-AF96BD24CA41">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>D5F2C3DA-A8A6-B649-5DDA-C77FEE9989CC</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8AEF30A3-99C0-763A-AF69-42B3F83C90C4" name="Paciente_PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>8C53F948-CB9B-35A3-3D32-9EBD683D4F55</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44684289-BB5D-8766-D459-4CEAEA907315"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C98457D-0CE0-E81D-D98F-53930EA53652" name="Paciente__UN">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>C77B23FC-06A0-5A1C-D31B-35F75D949F60</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="2D992EDF-84CD-DA8D-1BAA-9F9A017DAD10" name="Paciente_Cedula_UN">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:38:08 UTC</createdTime>
+<generatorID>56FD23D8-92A4-5855-5D96-7B5999BB347C</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7176F2E9-54B5-5C2C-099D-AF96BD24CA41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8923AF95-10F7-429D-F639-5742781904AD" name="Departamento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>69CB7D2D-63D0-89A9-89D1-A8A7DC4B2095</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Departamento" id="E468E230-363C-C5FE-56C3-CA984E5CD881">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>F0B13A4C-859C-37E5-7306-31C5388BB9BE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion_Departamento" id="4C623495-C2B0-9BD4-7818-AFF4A8E73554">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>390CD67C-A59B-48B1-AA8F-FD8360DD86CC</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="35F13364-C682-11FF-8453-C8E01BFA7B80" name="Departamento_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>E737FD24-3D0D-39F8-BF2D-813303BC2A86</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E468E230-363C-C5FE-56C3-CA984E5CD881"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2113AA3A-5AAC-2117-3AB2-63572D4C84D9" name="Departamento_Descripcion_Departamento_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:59:59 UTC</createdTime>
+<generatorID>DAFEF7EB-93F8-9D3D-E066-0DE08D625F21</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C623495-C2B0-9BD4-7818-AFF4A8E73554"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

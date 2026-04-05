@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2808316-C0A3-3C15-8161-73065B732589" name="Mascota">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>F78457D4-E6B7-2046-687D-FE28295F52AA</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Mascota" id="DE6E04CE-EABC-FEEB-560C-887A17725F2A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>45A1C672-E263-6EAF-C1CC-357A8686A044</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Mascota" id="9CDCBC61-2DFD-170A-D5BC-49BEDDDF7B04">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>D6E2A061-6419-6E77-59B1-B306B1E53AA6</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Ingreso" id="A21E7FA3-9626-B5A3-27A4-1094933D596F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>C0DCC154-7A4D-3490-4132-B85DD4200604</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clinica_Id_Clinica" id="026CF203-6705-182E-57BE-431183A87ED0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>19505E6C-CC45-4070-CEB4-0DE104773139</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="635C6BDB-1C67-F05A-0F0A-446900232374" referredColumn="63453217-8007-313C-1F7B-18D3C41ACAD3"/>
+</associations>
+</Column>
+<Column name="Propietario_Id_Propietario" id="4715284C-5916-73BD-2D39-93A582C91C92">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>431BD1F7-8A6B-EB16-8672-991D57FE156F</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C608C9C-43DE-A041-C1C6-5AC35299ED14" referredColumn="D3FAB18B-A566-6342-3CDB-1A2346BB108C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB83DB72-8732-839B-32E0-4025AB85F9EC" name="Mascota_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>9C62FAD5-5B91-37CE-DDFF-162EDE5FE055</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE6E04CE-EABC-FEEB-560C-887A17725F2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28930D87-BE9A-CCF3-43B9-2805B2F6FE5C" name="Mascota_Clinica_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>0A82F73A-B750-6DE3-B705-245BB46CC7B4</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="026CF203-6705-182E-57BE-431183A87ED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A71B728-FB59-2D59-E664-2F275F37899C" name="Mascota_Propietario_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>92C90C76-8FA5-3442-26DA-ED00EED54881</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4715284C-5916-73BD-2D39-93A582C91C92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="952FD8C0-CB45-B217-357B-BCAA3C27EA12" mainViewID="3E6117D8-2C36-1A6F-254F-EE0393FF08D0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 01:48:13 UTC</createdTime>
+<ownerDesignName>Triggers</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

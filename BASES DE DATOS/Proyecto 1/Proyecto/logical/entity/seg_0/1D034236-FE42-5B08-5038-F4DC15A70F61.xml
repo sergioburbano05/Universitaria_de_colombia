@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1D034236-FE42-5B08-5038-F4DC15A70F61" name="Propietario">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:42:53 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Propietario" id="B767D6E6-A64C-7A55-1152-BBBC394856D6">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 22:33:06 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cedula" id="E2F656E4-FB67-0437-BC22-00874DF43FA5">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:01 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Cedula" id="4DA0C60E-9CDD-70DD-DCF3-7250D2683323">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:07 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="E98680EC-B2E0-2CA2-9FEC-468F63E45EE9">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:16 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="EE5A2B82-7C4A-B149-7509-502C056C9690">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 23:07:02 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="1178562A-73EB-9C21-DAB4-99B4DF25AE5C">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:27 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tel_Casa" id="F9560D10-554E-66F4-FDC3-42A21234B3E3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:39 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="81E24BC9-7C34-A9B6-C13B-D5808C51C99A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:53:12 UTC</createdTime>
+<generatorID>9326809A-3953-04DF-590F-514F61BA1ACD</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40F8D402-C5A8-6708-1ADB-CD62D784F9DA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="D76C3801-5D66-0DEA-6A84-91F1C8BA6811">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:09 UTC</createdTime>
+<generatorID>9326809A-3953-04DF-590F-514F61BA1ACD</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3555E648-9705-0747-8F73-3363D423BDB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="28572295-4901-1D36-BDC4-6273446F8CB8" name="Dueno_Mascota PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:43:06 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B767D6E6-A64C-7A55-1152-BBBC394856D6</attributeRef>
+<attributeRef>81E24BC9-7C34-A9B6-C13B-D5808C51C99A</attributeRef>
+<attributeRef>D76C3801-5D66-0DEA-6A84-91F1C8BA6811</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FF47CFB4-46F1-1F28-A273-64AA1A72833E" name="Key_2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 22:52:53 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<newElementsIDs>E2F656E4-FB67-0437-BC22-00874DF43FA5,4DA0C60E-9CDD-70DD-DCF3-7250D2683323</newElementsIDs>
+<usedAttributes>
+<attributeRef>E2F656E4-FB67-0437-BC22-00874DF43FA5</attributeRef>
+<attributeRef>4DA0C60E-9CDD-70DD-DCF3-7250D2683323</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

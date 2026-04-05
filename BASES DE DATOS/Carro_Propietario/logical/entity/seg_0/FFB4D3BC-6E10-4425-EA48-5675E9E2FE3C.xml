@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFB4D3BC-6E10-4425-EA48-5675E9E2FE3C" name="Ciudad">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:13:45 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="5484C25F-4B9E-91EE-AF3D-F20EF4114F4A">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:13:51 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="55BE3634-4AC2-F90C-5A50-BFE2BCB78832">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:13:59 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="80421258-E249-FE61-E8B6-ECAD4AD9CFDF">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:16:30 UTC</createdTime>
+<generatorID>67AC9515-F301-7594-6001-EC8BBE928593</generatorID>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<referedAttribute>D745BAF3-682A-9729-1BA9-08B87E36147F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="98097CDF-EF78-F92D-998A-E33DD287C538" name="Ciudad PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:13:57 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5484C25F-4B9E-91EE-AF3D-F20EF4114F4A</attributeRef>
+<attributeRef>80421258-E249-FE61-E8B6-ECAD4AD9CFDF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

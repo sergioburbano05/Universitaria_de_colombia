@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5744F6EC-E765-FE9C-F05E-8E4C0D13C513" name="Director">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:03:26 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cedula" id="DAE01AF9-F052-887D-6F28-5C5D3CC52EF1">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:03:35 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Cedula" id="D2BBD417-720E-DD08-CB47-683657C043CB">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:04:05 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="B3C58F73-08FF-F047-B04D-0A9815A148D4">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:04:16 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellidos" id="2C502E2F-7C2B-035A-E644-A205BD784464">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:04:46 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Nacimiento" id="C6BE15A1-A951-9452-C56C-D6E67F0E90D8">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:04:52 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Ingreso" id="6A9606D3-1AAC-FF2D-86FE-5AA3B96AFC4D">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:05:04 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clase_Director" id="142C9F8F-5B34-25EF-C357-5BBE185FB193">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:05:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Solo puede ser Junior o Senior]]></commentInRDBMS>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Anos_Experiencia" id="D9AF0BF1-6C9C-8604-449F-4FBE6D84EF1A">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:05:45 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="13E86312-0901-6549-BB4E-58B40192B59F" name="Director PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:04:04 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DAE01AF9-F052-887D-6F28-5C5D3CC52EF1</attributeRef>
+<attributeRef>D2BBD417-720E-DD08-CB47-683657C043CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

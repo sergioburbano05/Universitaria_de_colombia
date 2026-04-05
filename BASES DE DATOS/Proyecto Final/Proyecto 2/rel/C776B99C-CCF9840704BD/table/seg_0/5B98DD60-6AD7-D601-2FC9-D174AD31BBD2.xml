@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B98DD60-6AD7-D601-2FC9-D174AD31BBD2" name="Examen">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>D54959C3-76A3-4D7E-1232-59F662749261</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Examen" id="24D5FC8D-2F82-0459-DC91-CE046C0544D7">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>CF88ABC6-1A19-5727-D3EE-883F458445DC</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Periodo_Id_Periodo" id="4999CB77-4646-9F09-D492-6DAC49BD942E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>C0124EC9-1E3A-25BD-84F4-7487159D9F86</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EE66E06-1728-4DBA-41D1-2C017B261176" referredColumn="CA4982E5-2200-A326-F1F9-F8BC6CD0557C"/>
+</associations>
+</Column>
+<Column name="Mascota_Id_Mascota" id="4B1FD952-B480-6A2E-E4D3-5F8918F944FD">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>FF18F1EA-2E9D-06C6-12A7-229F7E5D134B</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FE1C580-E578-C000-29B1-03AFD981B2CC" referredColumn="6FD4C04F-EF01-9A02-A432-F3F8C5538F25"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A68C9930-1D53-5066-6186-4B5606836437" name="Examen_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>7EC06F7D-0F60-BF04-6854-4602B1D39B0F</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24D5FC8D-2F82-0459-DC91-CE046C0544D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="002CBF73-7311-7A30-B44C-501594EFA0E3" name="Examen_Periodo_Id_Periodo_Mascota_Id_Mascota_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>53609CB3-9253-6428-863F-D0B3FA4BE7D9</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4999CB77-4646-9F09-D492-6DAC49BD942E"/>
+<colUsage columnID="4B1FD952-B480-6A2E-E4D3-5F8918F944FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA6E9158-CBE4-F01D-E2BC-7B7565148798" name="Examen_Periodo_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>5652C2A5-D02D-0C3C-77BC-CBBEB895D2BB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4999CB77-4646-9F09-D492-6DAC49BD942E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6CB4639-69A9-5E40-5E14-157046EC9905" name="Examen_Mascota_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>56B6BA3B-8F88-0501-ED15-65B513381316</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B1FD952-B480-6A2E-E4D3-5F8918F944FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

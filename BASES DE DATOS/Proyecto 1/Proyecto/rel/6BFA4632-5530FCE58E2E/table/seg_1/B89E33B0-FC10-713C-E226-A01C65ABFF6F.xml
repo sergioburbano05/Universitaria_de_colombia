@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B89E33B0-FC10-713C-E226-A01C65ABFF6F" name="Estadia_Corral">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>B3590B4C-C218-28DA-5301-BD3D30E295B2</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Estadia" id="44D7FDAA-DF42-693D-78CC-917BAB272F31">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>BAA48E9E-8879-B969-0183-F080F2B26E49</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Ingreso" id="D1B12A88-21C7-706F-BA79-D4AFB6A45390">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>BB8B7B1B-045E-E315-30FB-2B3297482596</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Salida" id="9D9392C0-390D-26F3-7CB2-62BB570F8F44">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>6DD3AF74-2DC7-71F2-FCBC-51E92FBA5325</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Comentarios_Adicionales" id="51CC2D2B-0189-1BF0-53BE-D4C7FA66B305">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>9A5E9648-2536-A942-168A-FB885A4AE84F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Corral_Id_Corral" id="5B954071-6B83-CF19-1937-36C3E02D6763">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>2D032A1A-CAE3-0069-AA33-35B356C67A36</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3D2AF4F-4876-6BB6-5B56-5D045457BCDF" referredColumn="804572D1-F7E2-FE36-A0E0-DCD8074546C0"/>
+</associations>
+</Column>
+<Column name="Corral_Estado_Corral_Id_Estado_Corral" id="518E93A5-AE35-E760-B1FB-080A311D7EF8">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>D6B8CDD7-ED2B-3D69-C574-AFD275261482</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3D2AF4F-4876-6BB6-5B56-5D045457BCDF" referredColumn="0672A05C-0DE0-DF00-915F-D395A5AD9097"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B9E58DE-AEB2-AA54-C061-6C79D77F2CFB" name="Estadia_Corral_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3C066D78-F4E6-CA2D-A9F3-9C08B17D7EC5</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44D7FDAA-DF42-693D-78CC-917BAB272F31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DFB43C7-A613-05A1-C375-CC2CF6439BAC" name="Estadia_Corral_Corral_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>4F900D03-7640-FAAA-C82B-816F371CEB9F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B954071-6B83-CF19-1937-36C3E02D6763"/>
+<colUsage columnID="518E93A5-AE35-E760-B1FB-080A311D7EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

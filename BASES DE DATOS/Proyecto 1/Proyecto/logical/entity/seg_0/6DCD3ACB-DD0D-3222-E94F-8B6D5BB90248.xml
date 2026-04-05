@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6DCD3ACB-DD0D-3222-E94F-8B6D5BB90248" name="Suministros_Quirurgicos">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:49:35 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Sum_Quir" id="0CA9FE61-4880-C385-51A5-07E3DC5A1933">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:12 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="704723D2-8B96-BA8E-6028-9815F0A4A4E8">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:27 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="2DC87277-3B0C-C9EB-49A8-A1F6DD718A2E">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:33 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Stock" id="ED4AB519-F1DA-F0D5-24D1-7E984D5995D3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:47 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nivel_Reorden" id="3F61D4C4-F90F-A38E-0C18-702CB41FE2D4">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:56 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Repedida" id="8242E302-247B-EED0-998B-4CA549BACA64">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:51:06 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Costo" id="F4E588A3-9BB1-F579-760B-39655825C688">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:51:19 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="95924E21-3277-2D0F-D335-CB7B5D3B01AD">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 22:47:05 UTC</createdTime>
+<generatorID>2DFB039A-0418-8590-280C-5DBFA4D98CEA</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40F8D402-C5A8-6708-1ADB-CD62D784F9DA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="BD35C85E-7C10-A3AE-B623-D1AB9E8C8FF7">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:09 UTC</createdTime>
+<generatorID>2DFB039A-0418-8590-280C-5DBFA4D98CEA</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3555E648-9705-0747-8F73-3363D423BDB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A96B614E-7C6E-17D8-3C8E-6C863A6011F2" name="Suministros_Quirurgicos PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:50:26 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0CA9FE61-4880-C385-51A5-07E3DC5A1933</attributeRef>
+<attributeRef>95924E21-3277-2D0F-D335-CB7B5D3B01AD</attributeRef>
+<attributeRef>BD35C85E-7C10-A3AE-B623-D1AB9E8C8FF7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F69CC34-8DBE-2CA6-D288-EA3D64967CB2" name="Ciudad">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:39:16 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Ciudad" id="87CFE339-8211-2CBB-BBB0-B78AECE58E4C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:39:21 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Ciudad" id="C12EE69D-85E8-1506-CBDF-C2E4B9564A0A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:39:26 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Departamento" id="4F3426D4-959F-380B-FFF5-C0CBE43D7453">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:39:40 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="35C30407-8998-968F-E1C3-E4CD1AE1F7C1" name="Ciudad PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:39:24 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87CFE339-8211-2CBB-BBB0-B78AECE58E4C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8020EC67-F1FC-F200-03F0-84809DACD57E" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:00:26 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<newElementsIDs>C12EE69D-85E8-1506-CBDF-C2E4B9564A0A,4F3426D4-959F-380B-FFF5-C0CBE43D7453</newElementsIDs>
+<usedAttributes>
+<attributeRef>C12EE69D-85E8-1506-CBDF-C2E4B9564A0A</attributeRef>
+<attributeRef>4F3426D4-959F-380B-FFF5-C0CBE43D7453</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

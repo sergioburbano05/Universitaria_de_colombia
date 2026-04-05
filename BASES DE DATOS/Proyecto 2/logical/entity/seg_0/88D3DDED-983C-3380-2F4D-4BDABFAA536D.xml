@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88D3DDED-983C-3380-2F4D-4BDABFAA536D" name="Examen">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:18 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Examen" id="A42B2363-6DBB-C2C1-AE9A-62240EA68335">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:22 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Examen" id="DB512443-0CAC-322F-4C43-F6FCAF646D04">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:10:43 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resultado_Examen" id="12FF3DF5-A01A-D731-FBEE-E056B3FC9B7A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:07:40 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Mascota" id="25573FC2-FCBB-2855-EFB7-2E4F6E261768">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:17:37 UTC</createdTime>
+<generatorID>059A64FC-9417-6897-9396-B02FE0B337C2</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>45A1C672-E263-6EAF-C1CC-357A8686A044</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Periodo" id="03045DF8-C455-0DB8-F053-53E0C1D29B1A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:17:51 UTC</createdTime>
+<generatorID>FD96BF0A-2BBC-BD0E-43DF-17265DF193BE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>012FE96D-C2E3-2F7D-C929-2EA7121D1866</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7141034F-D0E5-4C1B-C71B-811E9E22B4A9" name="Examen PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:26 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A42B2363-6DBB-C2C1-AE9A-62240EA68335</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

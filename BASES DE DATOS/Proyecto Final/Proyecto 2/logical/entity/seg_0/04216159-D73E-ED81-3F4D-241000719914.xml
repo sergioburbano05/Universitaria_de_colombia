@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="04216159-D73E-ED81-3F4D-241000719914" name="Clinica">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:30 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Clinica" id="40E8CC90-A534-63C7-3FD5-F26DEB066ACA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:36 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Clinica" id="1CCA1C18-42AF-D742-D01A-D1BBB95A4B42">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:02:46 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Municipio" id="4E936CBE-8939-2FC7-9C69-7828E82019EA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:14:18 UTC</createdTime>
+<generatorID>F2E2F373-AF09-A2DC-E00F-B8F3F7A0D756</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>C45CC962-123E-6EFB-79E2-CB4C596196DE</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77AE776B-3982-2070-47ED-D54838F12D5B" name="Clinica PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 23:03:19 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>40E8CC90-A534-63C7-3FD5-F26DEB066ACA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4FBAC928-2E1D-67F6-36DB-580F05769818" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:37:42 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<newElementsIDs>1CCA1C18-42AF-D742-D01A-D1BBB95A4B42,4E936CBE-8939-2FC7-9C69-7828E82019EA</newElementsIDs>
+<usedAttributes>
+<attributeRef>1CCA1C18-42AF-D742-D01A-D1BBB95A4B42</attributeRef>
+<attributeRef>4E936CBE-8939-2FC7-9C69-7828E82019EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

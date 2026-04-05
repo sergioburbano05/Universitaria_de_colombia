@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7563D97-962B-B45A-0E64-255CE5075F92" name="Sexo">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:43:59 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Sexo" id="FD93F94D-85E4-929B-FA28-45ACE387F4F2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:44:06 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="68E1BB65-7F0D-5425-7946-7F8DF3A3DA1E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:44:11 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61CD3F40-8926-F43B-C82E-5E2EDB6D001E" name="Sexo PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:44:23 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FD93F94D-85E4-929B-FA28-45ACE387F4F2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="22065F90-5B0D-C42A-DB25-E8D28E2B0391" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:01:19 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<newElementsIDs>68E1BB65-7F0D-5425-7946-7F8DF3A3DA1E</newElementsIDs>
+<usedAttributes>
+<attributeRef>68E1BB65-7F0D-5425-7946-7F8DF3A3DA1E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

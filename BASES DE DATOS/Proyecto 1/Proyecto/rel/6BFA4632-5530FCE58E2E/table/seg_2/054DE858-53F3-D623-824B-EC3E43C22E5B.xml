@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="054DE858-53F3-D623-824B-EC3E43C22E5B" name="Veterinario">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>BB6C26E6-3D01-2D2B-AA1F-61E521AF313A</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Veterinario" id="050B2663-060D-30B2-C385-E2BD0B22FAE2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>B03938E1-1676-2B90-56F1-61D4B7AA3828</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cedula" id="4135642A-A267-4152-6620-7484FB14A083">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>8680E4B6-F6E4-E4D5-9DFB-D9CE0DCD4E21</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Cedula" id="58B11AFA-669F-DABC-3CC6-B27150AD8A0F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>0B4EFEAD-79EF-3DED-E871-7DACA36FAC98</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="308F286D-2B4B-D155-C0E1-D052B4F5DD11">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>7FBA855C-793E-7E80-CACC-A90B348B5A7D</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="FAC6F810-CB8B-6679-8840-D061F3220730">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>A8577094-CEC4-EC77-37AC-C5DA13BC7D53</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Equipo_Id_Equipo" id="F1253368-67BD-1D5B-8546-A1D076162C72">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>7C421C02-E945-5992-0EE2-D0F99EF63108</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5792D14-3E50-C9CC-4EE0-B2640132EB43" referredColumn="874C4DEA-3EE2-29B6-DFA0-6864B0534801"/>
+</associations>
+</Column>
+<Column name="Equipo_Clinica_Id_Clinica" id="588DE39B-EC59-48B2-40BA-6DB507B528FB">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3D4E0B5C-22A0-CB4D-7C7A-C900AD1399A9</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5792D14-3E50-C9CC-4EE0-B2640132EB43" referredColumn="4181D90B-A96F-4583-172F-65D4D5D87CE1"/>
+</associations>
+</Column>
+<Column name="Equipo_Clinica_Id_Ciudad" id="3D72B446-6A7C-968A-4155-CA7EA848389D">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E6CB4260-3167-A657-3C20-B4320F46D26C</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5792D14-3E50-C9CC-4EE0-B2640132EB43" referredColumn="1DD0C283-722B-1A65-9922-86A8F104C032"/>
+</associations>
+</Column>
+<Column name="Equipo_Posicion_Id_Posicion" id="A5537961-F099-EC20-1AA5-6550AB64C50B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>D188E8FB-5A93-E727-02A3-F1484D3DB406</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5792D14-3E50-C9CC-4EE0-B2640132EB43" referredColumn="F9173023-6D6D-9A27-0C4A-E402185C1F3C"/>
+</associations>
+</Column>
+<Column name="Equipo_Sexo_Id_Sexo" id="0F2AF39C-76BE-D2EB-2B47-BD23D2F517E6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>40AD83A2-EF98-659A-DD9E-B440CB5D7481</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5792D14-3E50-C9CC-4EE0-B2640132EB43" referredColumn="164D0568-1369-0AB7-3006-6AD09B612A12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54B9A669-E52F-8FFF-DEA1-68AC6B07CA76" name="Veterinario_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>B59E06AD-94D1-575D-4580-88DC8901D80F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="050B2663-060D-30B2-C385-E2BD0B22FAE2"/>
+<colUsage columnID="F1253368-67BD-1D5B-8546-A1D076162C72"/>
+<colUsage columnID="588DE39B-EC59-48B2-40BA-6DB507B528FB"/>
+<colUsage columnID="3D72B446-6A7C-968A-4155-CA7EA848389D"/>
+<colUsage columnID="A5537961-F099-EC20-1AA5-6550AB64C50B"/>
+<colUsage columnID="0F2AF39C-76BE-D2EB-2B47-BD23D2F517E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5647E2D0-66BA-37F8-6EF8-E8093D764EF9" name="Veterinario_Cedula_Tipo_Cedula_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3D0FEAC7-2A92-4456-E763-C699AC9A1F4F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4135642A-A267-4152-6620-7484FB14A083"/>
+<colUsage columnID="58B11AFA-669F-DABC-3CC6-B27150AD8A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="783DB2C1-81B6-1BB5-FAF5-A677654D7F7E" name="Veterinario_Equipo_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>9011E760-627F-F2DC-47FF-ABD9D9C980B0</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1253368-67BD-1D5B-8546-A1D076162C72"/>
+<colUsage columnID="588DE39B-EC59-48B2-40BA-6DB507B528FB"/>
+<colUsage columnID="3D72B446-6A7C-968A-4155-CA7EA848389D"/>
+<colUsage columnID="A5537961-F099-EC20-1AA5-6550AB64C50B"/>
+<colUsage columnID="0F2AF39C-76BE-D2EB-2B47-BD23D2F517E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

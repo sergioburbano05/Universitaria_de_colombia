@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="836FCFFD-82BE-51A5-C186-B025F11E4E30" name="Gerente">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:09:17 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Gerente" id="E49CAC3B-EAAB-8A60-FF3F-18F18F392BA8">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:09:23 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Gerente" id="1379A603-876A-D0A3-1B6F-B37C7B37BCF3">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:59:58 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellidos_Gerente" id="49016441-E8CD-4BF5-47BB-AC220927A424">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:00:07 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="B0971F3D-953B-2864-14AE-D74E91CC65FB">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:12:06 UTC</createdTime>
+<generatorID>DF3F0C87-54AD-E267-28AF-87039D4BDC31</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40F8D402-C5A8-6708-1ADB-CD62D784F9DA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="1A370394-AD65-BC86-4DBD-D68AD839EF7C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:09 UTC</createdTime>
+<generatorID>DF3F0C87-54AD-E267-28AF-87039D4BDC31</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3555E648-9705-0747-8F73-3363D423BDB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E38FA39-F375-C8AE-8144-63783C1C300D" name="Gerente PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 15:09:32 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E49CAC3B-EAAB-8A60-FF3F-18F18F392BA8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

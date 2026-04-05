@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="33484D36-ECD5-6BB2-2D3D-8A61231FF8DC" name="Sexo">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E7563D97-962B-B45A-0E64-255CE5075F92</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Sexo" id="FE0E765B-D57F-F5C1-4E78-98C5D10F1740">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>FD93F94D-85E4-929B-FA28-45ACE387F4F2</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="43307B42-B8D1-7677-4178-AB68CEC434C3">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>68E1BB65-7F0D-5425-7946-7F8DF3A3DA1E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F31F5466-A05B-8AED-08BD-B734FBCC3671" name="Sexo_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>61CD3F40-8926-F43B-C82E-5E2EDB6D001E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE0E765B-D57F-F5C1-4E78-98C5D10F1740"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69D202DA-D033-9EE9-9820-B4E574E8184B" name="Sexo_Descripcion_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>22065F90-5B0D-C42A-DB25-E8D28E2B0391</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43307B42-B8D1-7677-4178-AB68CEC434C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

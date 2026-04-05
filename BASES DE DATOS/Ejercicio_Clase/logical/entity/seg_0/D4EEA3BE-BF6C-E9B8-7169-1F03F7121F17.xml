@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D4EEA3BE-BF6C-E9B8-7169-1F03F7121F17" name="Programadores">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:58:16 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cedula" id="49C62E50-728A-83F7-63E6-DAD4974AE00B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:58:39 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Cedula" id="69739034-3797-C9D2-EE74-12E4C7F8DC32">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:58:55 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="3F02B847-5800-2145-1A35-145A0669EF01">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:00:18 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellidos" id="837FCE59-AEF3-E4B8-4807-FE237D6388A5">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:00:35 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Nacimiento" id="757DFF78-9694-9989-EC37-2EAF74E8752D">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:00:47 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Ingreso" id="F0A79D64-20E0-68FC-32E1-A78F882490A4">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:01:03 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Clase_Programador" id="279BB59B-944F-2F35-4791-8861EC4DCFD1">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:01:16 UTC</createdTime>
+<comment><![CDATA[Solo puede ser Junior o Senior]]></comment>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Proyecto" id="819DCDE8-54BD-FDC5-3EF8-6FA22A544768">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:08:03 UTC</createdTime>
+<generatorID>86049990-388D-A966-0B0E-0E170172AC5E</generatorID>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<referedAttribute>1DBFE7F8-B896-D952-C67E-D72875F11EF5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="50443419-303A-ADED-8C65-56FB6AC167AA" name="Programadores PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-04 23:58:54 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>49C62E50-728A-83F7-63E6-DAD4974AE00B</attributeRef>
+<attributeRef>69739034-3797-C9D2-EE74-12E4C7F8DC32</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

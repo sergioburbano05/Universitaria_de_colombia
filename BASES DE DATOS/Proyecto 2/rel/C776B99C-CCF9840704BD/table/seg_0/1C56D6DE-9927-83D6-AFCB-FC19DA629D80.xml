@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C56D6DE-9927-83D6-AFCB-FC19DA629D80" name="Examen_Tratamiento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>CC2A97DE-C51D-379E-0C78-A9D2D34B1B94</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Examen_Tratamiento" id="B9BA962A-FEE2-9256-3767-5A32B2A0ACFC">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>9393058B-BBE7-A6AD-2EE0-487F4528CEA7</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad_Tratamiento" id="540A5925-8D1F-28EB-930C-2613E301A504">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>247EB91C-F0B3-7C9A-9BE1-DA71D0EEEB03</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tratamiento_Id_Tratamiento" id="9CAE9F56-79DA-89E5-30C3-5118EE91CEF2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>FC9E5667-B5F6-46D6-215A-35186C1F480A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E89A3B2B-E171-BEB8-A8D6-FB832F994A3A" referredColumn="E7C8DD95-B362-9365-FB1F-E9A8CAC4FBC2"/>
+</associations>
+</Column>
+<Column name="Examen_Id_Examen" id="D090AFE3-D9A7-4EBE-AEC6-E7DF1A0B99BA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>A7F3DB7B-93DE-C3C2-C960-EE1F2AF6B3AE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="807BE8E9-BD58-3EFF-1961-5241DE1A6EA0" referredColumn="7B1F3AB8-E67E-5A31-EE72-ABFB894BE1D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C94894C-F02B-9049-A62C-68F856D7CD97" name="Examen_Tratamiento_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>E6AD6938-52FC-2A0C-6B7E-92289F89ABE0</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9BA962A-FEE2-9256-3767-5A32B2A0ACFC"/>
+<colUsage columnID="9CAE9F56-79DA-89E5-30C3-5118EE91CEF2"/>
+<colUsage columnID="D090AFE3-D9A7-4EBE-AEC6-E7DF1A0B99BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFC8A375-BA19-3308-7515-FE57EFED95F3" name="Examen_Tratamiento_Tratamiento_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>01FC7F5B-57B5-E8CD-BE03-389992162B40</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CAE9F56-79DA-89E5-30C3-5118EE91CEF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5F7F1D5-35A8-F8A1-E3DC-FBD90569442F" name="Examen_Tratamiento_Examen_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>74051292-0949-02D3-56E4-DA92D64104DB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D090AFE3-D9A7-4EBE-AEC6-E7DF1A0B99BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

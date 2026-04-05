@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A55D3B53-3176-FDBC-2BD9-8B47A0DAC6EE" name="Equipo">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:37:28 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Equipo" id="940F3869-E3BD-0B81-7895-5D82207830B3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 22:31:56 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cedula" id="A92A13F0-3371-2BED-1973-DB49FD497559">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:37:36 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Cedula" id="A68086D9-F4B8-785C-5ACF-3656E910253B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:37:44 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="66875443-338A-B768-6F1A-4FF1E618ACB3">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:38:07 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="9DF61FA8-7A27-64D4-B3AE-CEFE4C479BFD">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 23:05:46 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="3C40DA9A-8455-C45F-5EF6-023E939DBD1B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:38:13 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="9681D428-70A2-9921-5F0D-6482D0ADA049">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:39:08 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Nacimiento" id="4DE09181-2A4A-4CF9-20F2-5D29AB15A575">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:39:17 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="2BFA64CD-DB44-DE6E-E3B4-9BA58198545D">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 22:45:45 UTC</createdTime>
+<generatorID>313E8E91-9504-1632-E9EC-BDCFA4E06690</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40F8D402-C5A8-6708-1ADB-CD62D784F9DA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Posicion" id="8958706B-7E3D-F5F1-0DF2-8BA01EC08928">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:41:07 UTC</createdTime>
+<generatorID>C75F68D7-3255-32FF-39BA-67ABB5C7656C</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>5DC760EA-78EE-EC1F-8B2D-8D519BB970CD</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Sexo" id="D52F0E7B-6FAB-0353-4937-97E64FA0F766">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:45:17 UTC</createdTime>
+<generatorID>3D4F9EC7-D090-924E-00FA-DBC8DEC59AFE</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>FD93F94D-85E4-929B-FA28-45ACE387F4F2</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="0869B72B-0A38-D98B-7F9B-C6BCB71E79A0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:09 UTC</createdTime>
+<generatorID>313E8E91-9504-1632-E9EC-BDCFA4E06690</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3555E648-9705-0747-8F73-3363D423BDB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E33656C7-1243-4DA7-DF31-B369D6BE9728" name="Equipo PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:37:43 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>940F3869-E3BD-0B81-7895-5D82207830B3,313E8E91-9504-1632-E9EC-BDCFA4E06690,C75F68D7-3255-32FF-39BA-67ABB5C7656C,3D4F9EC7-D090-924E-00FA-DBC8DEC59AFE</newElementsIDs>
+<usedAttributes>
+<attributeRef>940F3869-E3BD-0B81-7895-5D82207830B3</attributeRef>
+<attributeRef>2BFA64CD-DB44-DE6E-E3B4-9BA58198545D</attributeRef>
+<attributeRef>0869B72B-0A38-D98B-7F9B-C6BCB71E79A0</attributeRef>
+<attributeRef>8958706B-7E3D-F5F1-0DF2-8BA01EC08928</attributeRef>
+<attributeRef>D52F0E7B-6FAB-0353-4937-97E64FA0F766</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="80BE7F5E-F634-C916-20B8-F9B3D53FCBC2" name="Key_2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-07 22:52:33 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<newElementsIDs>A92A13F0-3371-2BED-1973-DB49FD497559,A68086D9-F4B8-785C-5ACF-3656E910253B</newElementsIDs>
+<usedAttributes>
+<attributeRef>A92A13F0-3371-2BED-1973-DB49FD497559</attributeRef>
+<attributeRef>A68086D9-F4B8-785C-5ACF-3656E910253B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

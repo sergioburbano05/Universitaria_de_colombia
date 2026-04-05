@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CAFFC091-2715-134F-17BA-3990BEF3FA61" name="Examen_Mascota">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:45:53 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Examen" id="E7D80FA7-18E8-B4F0-0D4B-8AD8002CE647">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:48:57 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Hora" id="B0112C8C-EE4E-537D-C6E5-C651C741BAF4">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:49:31 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Resultado_Examen" id="AD200360-63E4-4D5D-53AE-4FDA2F524630">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:51:02 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Examen" id="6B6CC32D-5AA3-31CF-2D66-7082882960D6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 02:48:10 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Veterinario" id="48B1C0C4-2CBE-EE21-BBE2-CB454589413A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 02:48:49 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>B03938E1-1676-2B90-56F1-61D4B7AA3828</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Mascota" id="DAB73499-B15F-80E0-AFAD-B8FC69463818">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 02:50:57 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>C1D6A9E3-0565-BE45-8134-0112E764DE4F</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Propietario" id="0D698C06-D707-372C-36AD-55401B83AAA0">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:10 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>ABDE7E11-9A9A-4341-A3FE-6CA461FDA157</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="CA073D5A-D8C3-335A-BCB3-AF558103A738">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:10 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>968901E4-83A9-C3A2-AFC9-480D1BB98FED</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="7CA73569-220E-F716-2CEF-274F2C534AF2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:10 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>A37FDBB4-2967-AB59-41E3-F4DBF8F181E5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tipo" id="21ED4790-90AC-A685-B078-F3940AA66E50">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:19 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>7A31EED6-85A4-8089-D00B-2EA29C2C3CCA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estado" id="98F5C2B0-AEBA-A1C7-62AA-BF506E5DC1C1">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:22 UTC</createdTime>
+<generatorID>D0A0C6DE-A3D9-88B8-81C1-D4A82F884FF1</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>727F1B74-652E-FDC8-BA59-D08F0A099BCD</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Equipo" id="0550596E-1259-7D6D-D4E8-003E4E03A6EC">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:53 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>7C421C02-E945-5992-0EE2-D0F99EF63108</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica1" id="60C630EE-D2B7-FA67-B0BA-B3BD87271F0F">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:53 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3D4E0B5C-22A0-CB4D-7C7A-C900AD1399A9</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad1" id="47683A4B-C384-1DA7-81C4-FA9E07367D61">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:53 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>E6CB4260-3167-A657-3C20-B4320F46D26C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Posicion" id="6E2DB118-C051-84A5-396E-A24907F37FFF">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:53 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>D188E8FB-5A93-E727-02A3-F1484D3DB406</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Sexo" id="FCE0816A-273D-F7F5-9B27-6D555C406762">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:54:53 UTC</createdTime>
+<generatorID>37CF6CF3-894E-8FC9-7FE5-404F47932B19</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40AD83A2-EF98-659A-DD9E-B440CB5D7481</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2136D21-AA3A-6148-6955-1BE55562126C" name="Examen_Mascota PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:49:30 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7D80FA7-18E8-B4F0-0D4B-8AD8002CE647</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="9E5FA9FA-251F-FDCF-358E-B8AB384BEC02" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:01:48 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<newElementsIDs>6B6CC32D-5AA3-31CF-2D66-7082882960D6</newElementsIDs>
+<usedAttributes>
+<attributeRef>6B6CC32D-5AA3-31CF-2D66-7082882960D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

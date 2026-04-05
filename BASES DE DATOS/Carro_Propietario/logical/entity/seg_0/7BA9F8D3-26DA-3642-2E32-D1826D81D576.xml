@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BA9F8D3-26DA-3642-2E32-D1826D81D576" name="Propietario">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:01:00 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="81140086-FADE-2247-1AF6-20E817EE8BBD">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:03:53 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="4386BBE6-60C5-C0F4-3FD9-8B35C83AAF06">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:04:06 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo_Doc" id="A9DFBE81-6A0A-07ED-EB8B-7EBCDEC0B8FC">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:04:16 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num_Doc" id="BB41B3F8-5ED8-3B39-5FDE-71ADDDF4A6AA">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:04:27 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4162B294-58CA-C86D-98C5-3EF90F2BE4AF" name="Propietario PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:04:02 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81140086-FADE-2247-1AF6-20E817EE8BBD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E81058F4-9AC8-BBC3-0230-41B874EA175F" name="Key_2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:10:29 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<newElementsIDs>A9DFBE81-6A0A-07ED-EB8B-7EBCDEC0B8FC,BB41B3F8-5ED8-3B39-5FDE-71ADDDF4A6AA</newElementsIDs>
+<usedAttributes>
+<attributeRef>A9DFBE81-6A0A-07ED-EB8B-7EBCDEC0B8FC</attributeRef>
+<attributeRef>BB41B3F8-5ED8-3B39-5FDE-71ADDDF4A6AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Matriculado" directorySegmentName="seg_0" id="9A75E962-F4DD-2568-CD9A-A5115B85DE8B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:14:23 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<sourcePk>98097CDF-EF78-F92D-998A-E33DD287C538</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FFB4D3BC-6E10-4425-EA48-5675E9E2FE3C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5B0056A4-9444-E266-9645-1A08F053820A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

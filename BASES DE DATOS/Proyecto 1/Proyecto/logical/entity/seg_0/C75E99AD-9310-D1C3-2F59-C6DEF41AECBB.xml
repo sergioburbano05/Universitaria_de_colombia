@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C75E99AD-9310-D1C3-2F59-C6DEF41AECBB" name="Mascota">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:40:27 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Mascota" id="C1D6A9E3-0565-BE45-8134-0112E764DE4F">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:40:40 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Mascota" id="6527AFDD-4BFA-8B6D-5DCE-8773EE86023B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:40:48 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="B798E203-8BAF-3F90-39D0-E0989701237A">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:41:08 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Nacimiento" id="6CD01195-888A-60D5-525B-CF63040A3047">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:41:17 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Registrada" id="57EE3975-47FA-9E2F-D526-DDC47D65B5D0">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:41:25 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Propietario" id="ABDE7E11-9A9A-4341-A3FE-6CA461FDA157">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:41:49 UTC</createdTime>
+<generatorID>0B20B5B8-722F-022E-B891-004FA64EE495</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>B767D6E6-A64C-7A55-1152-BBBC394856D6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tipo" id="7A31EED6-85A4-8089-D00B-2EA29C2C3CCA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:46:57 UTC</createdTime>
+<generatorID>1119E260-0EE8-E7AD-C0CA-11673EB6E9AB</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>167EB9E3-FD88-7B76-A1C7-97E4F9FEEB6D</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estado" id="727F1B74-652E-FDC8-BA59-D08F0A099BCD">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:49:28 UTC</createdTime>
+<generatorID>029565B4-A76E-0937-D433-ADB52D93B911</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>77369CD6-3549-442F-CDCC-E6107A91C2A4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="968901E4-83A9-C3A2-AFC9-480D1BB98FED">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:56 UTC</createdTime>
+<generatorID>0B20B5B8-722F-022E-B891-004FA64EE495</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>81E24BC9-7C34-A9B6-C13B-D5808C51C99A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="A37FDBB4-2967-AB59-41E3-F4DBF8F181E5">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:56 UTC</createdTime>
+<generatorID>0B20B5B8-722F-022E-B891-004FA64EE495</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>D76C3801-5D66-0DEA-6A84-91F1C8BA6811</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="89EFAEAF-E7B6-B450-2ADC-3A622C056AA7" name="Dueno_Mascota PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:40:46 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C1D6A9E3-0565-BE45-8134-0112E764DE4F</attributeRef>
+<attributeRef>ABDE7E11-9A9A-4341-A3FE-6CA461FDA157</attributeRef>
+<attributeRef>968901E4-83A9-C3A2-AFC9-480D1BB98FED</attributeRef>
+<attributeRef>A37FDBB4-2967-AB59-41E3-F4DBF8F181E5</attributeRef>
+<attributeRef>7A31EED6-85A4-8089-D00B-2EA29C2C3CCA</attributeRef>
+<attributeRef>727F1B74-652E-FDC8-BA59-D08F0A099BCD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

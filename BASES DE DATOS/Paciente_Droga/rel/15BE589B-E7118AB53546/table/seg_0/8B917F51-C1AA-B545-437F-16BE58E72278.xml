@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B917F51-C1AA-B545-437F-16BE58E72278" name="Droga">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>CB962D10-8F5E-2997-0B09-45BFEFDD7D8D</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="8A0533BE-84D9-5DCB-202A-A50C7AC2ABF8">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>A13FE9C0-3658-745C-3EF5-CAB8F12DA9C7</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="7F711A42-F3CE-2B7C-F7AA-04DBD6DF68F2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>E973F74C-97F4-8BA7-D057-A0BC98FC1C28</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Paciente_Id" id="BF8D6A4D-5F6F-6742-053E-ED4A8B3C90B5">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>99A339D2-0A2E-1A71-417A-FCF029CCE032</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8499DB92-3B60-6F18-5CC6-39BAE9CD7CDC" referredColumn="44684289-BB5D-8766-D459-4CEAEA907315"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="338C8E70-72B4-45B5-3CD7-A4DB7B577B61" name="Droga_PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>75D4F815-512D-EFDB-C9C8-F44531ACF2B2</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0533BE-84D9-5DCB-202A-A50C7AC2ABF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95AC30C4-98D5-84DE-D0B6-DB0C5463952B" name="Droga__UN">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>F88BBD3B-FE89-AA01-F0CC-14A263E6C240</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="6D672B0E-5E72-2A9F-7579-5F695EEFD17B" name="Droga_Nombre_UN">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:38:08 UTC</createdTime>
+<generatorID>15F49526-AD23-043D-D57F-AE15FEDBBD0B</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F711A42-F3CE-2B7C-F7AA-04DBD6DF68F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BBBDAF6-B3AD-59AD-2CA6-EE248666E03A" name="Droga_Paciente_FK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:26:32 UTC</createdTime>
+<generatorID>986761C9-6E87-21E2-A778-14871C239696</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF8D6A4D-5F6F-6742-053E-ED4A8B3C90B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

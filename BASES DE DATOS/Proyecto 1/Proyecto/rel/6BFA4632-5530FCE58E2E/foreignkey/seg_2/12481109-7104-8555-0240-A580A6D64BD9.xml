@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="12481109-7104-8555-0240-A580A6D64BD9" containerWithKeyObject="FC42C127-3076-806A-0DB3-A07BF3CC87A3" localFKIndex="6FD3F8B3-0E26-11E1-B311-CF6BB55689F7" name="Factura_Por_Pagar_Factura_Pagada_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E30297FF-5331-3A28-1326-3433AD613A4E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<referredTableLongName>Factura_Pagada</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>41E6675D-6713-7108-6262-E75B579A8FF5</referredTableID>
+<keyObject>262E6B0B-CC1F-CD53-B6C7-C72F2ECAD470</keyObject>
+<referredKeyID>262E6B0B-CC1F-CD53-B6C7-C72F2ECAD470</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Factura_Pagada,Metodo_Pago_Id_Metodo_Pago</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

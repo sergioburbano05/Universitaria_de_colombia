@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA9A4D0F-42FD-278F-A13A-FDD1F0D4A821" name="Clinica">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:38 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Clinica" id="34DB5497-3F78-0F77-E3FB-3407D4A42396">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:43 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Clinica" id="28693CBA-F6F9-9065-BDDE-2DB8B16B990C">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:13:00 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion_Clinica" id="8E131611-4155-3FCE-F102-B6297C196BA6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tel_Clinica" id="B0E2D4B1-32AB-9173-151E-2759F52E37E1">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:02:09 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Municipio" id="9DE0A78E-2A07-3A05-8AA9-0D1ADEE33CA6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:16:44 UTC</createdTime>
+<generatorID>DD8D8A91-2EA0-4473-447F-1E8CAAA7C865</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>7444C009-9EF4-614D-35F9-2A9651212E16</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7688745B-6DC1-FFD5-A5A1-81A2FD38060E" name="Clinica PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:47 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>34DB5497-3F78-0F77-E3FB-3407D4A42396</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

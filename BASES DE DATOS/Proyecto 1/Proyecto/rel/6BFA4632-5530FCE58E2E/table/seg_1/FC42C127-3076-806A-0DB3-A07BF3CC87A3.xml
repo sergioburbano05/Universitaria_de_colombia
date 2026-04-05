@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FC42C127-3076-806A-0DB3-A07BF3CC87A3" name="Factura_Por_Pagar">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>5974E565-BD8A-50CB-8CCD-D96A065E05E9</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Factura_Por_Pagar" id="27A6700F-FBA4-D2DD-497E-7DC56EAF147B">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>C8C5744E-8A7B-1CCF-4500-80A3AE2CB77A</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="48F4EE76-F58E-4F0B-610F-7809E2F378E2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>BA143BE0-ADA7-0D92-0310-40AC382FDE72</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Detalle_Tratamiento" id="9B65A3C4-E2B4-03B8-0167-5F65EE6DACE9">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>299B1B9B-84D9-2E7A-3001-441432378A72</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo_Tratamiento" id="BFA630CE-31AF-EBC7-B730-3D79B8E59C1A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>1C8B9EE2-5A31-82FD-801D-9C7A491BF2EC</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Costo_Total" id="978E3436-1E6C-BEBC-8AC5-DC8742DC9266">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>68E21F6B-5521-BDA7-AD0F-98CF5388023F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Factura_Pagada_Id_Factura_Pagada" id="E443D3C0-B030-2B65-D885-BEBA26D3920A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>54E25EBE-1D5B-2040-F7F2-792A68B1FF18</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12481109-7104-8555-0240-A580A6D64BD9" referredColumn="23B427F6-9F40-6CE1-79D2-E3CAC065B6DA"/>
+</associations>
+</Column>
+<Column name="Factura_Pagada_Metodo_Pago_Id_Metodo_Pago" id="2856A487-C447-039B-030F-C446965D66B3">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>962511EC-3A35-1C7B-857F-2D136EBDBA50</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12481109-7104-8555-0240-A580A6D64BD9" referredColumn="C278326F-A419-D230-0017-1C35E67B7A6F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4BCD2EA-C51F-26C3-FBF0-8C6D03F8F734" name="Factura_Por_Pagar_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>857CF222-08C8-70E3-01FA-313B43285E34</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A6700F-FBA4-D2DD-497E-7DC56EAF147B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50444A62-F9FB-F4B0-AA60-8BCD47E0F19E" name="Factura_Por_Pagar__IDX">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E30297FF-5331-3A28-1326-3433AD613A4E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E443D3C0-B030-2B65-D885-BEBA26D3920A"/>
+<colUsage columnID="2856A487-C447-039B-030F-C446965D66B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FD3F8B3-0E26-11E1-B311-CF6BB55689F7" name="Factura_Por_Pagar_Factura_Pagada_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>E30297FF-5331-3A28-1326-3433AD613A4E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E443D3C0-B030-2B65-D885-BEBA26D3920A"/>
+<colUsage columnID="2856A487-C447-039B-030F-C446965D66B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CC2A97DE-C51D-379E-0C78-A9D2D34B1B94" name="Examen_Tratamiento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:04:50 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Examen_Tratamiento" id="9393058B-BBE7-A6AD-2EE0-487F4528CEA7">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:05:09 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Tratamiento" id="247EB91C-F0B3-7C9A-9BE1-DA71D0EEEB03">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:05:16 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tratamiento" id="FC9E5667-B5F6-46D6-215A-35186C1F480A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:18:04 UTC</createdTime>
+<generatorID>01FC7F5B-57B5-E8CD-BE03-389992162B40</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>8BC0B044-D362-361B-C315-19FF161FCD93</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Examen" id="A7F3DB7B-93DE-C3C2-C960-EE1F2AF6B3AE">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:18:21 UTC</createdTime>
+<generatorID>74051292-0949-02D3-56E4-DA92D64104DB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<referedAttribute>A42B2363-6DBB-C2C1-AE9A-62240EA68335</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6AD6938-52FC-2A0C-6B7E-92289F89ABE0" name="Examen_Tratamiento PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:05:15 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9393058B-BBE7-A6AD-2EE0-487F4528CEA7</attributeRef>
+<attributeRef>FC9E5667-B5F6-46D6-215A-35186C1F480A</attributeRef>
+<attributeRef>A7F3DB7B-93DE-C3C2-C960-EE1F2AF6B3AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

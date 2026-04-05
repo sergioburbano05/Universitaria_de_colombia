@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB962D10-8F5E-2997-0B09-45BFEFDD7D8D" name="Droga">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:14:18 UTC</createdTime>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id" id="A13FE9C0-3658-745C-3EF5-CAB8F12DA9C7">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:14:29 UTC</createdTime>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="E973F74C-97F4-8BA7-D057-A0BC98FC1C28">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:14:32 UTC</createdTime>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id1" id="99A339D2-0A2E-1A71-417A-FCF029CCE032">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:17:10 UTC</createdTime>
+<generatorID>986761C9-6E87-21E2-A778-14871C239696</generatorID>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<referedAttribute>F0111840-6DAF-8589-28B6-0FFAAEFD23DA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75D4F815-512D-EFDB-C9C8-F44531ACF2B2" name="Droga PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:15:14 UTC</createdTime>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A13FE9C0-3658-745C-3EF5-CAB8F12DA9C7</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="15F49526-AD23-043D-D57F-AE15FEDBBD0B" name="Key_2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 01:37:24 UTC</createdTime>
+<ownerDesignName>Paciente_Droga</ownerDesignName>
+<engineerTo>
+<item key="15BE589B-1602-ACB5-43BC-E7118AB53546" value="true"/>
+</engineerTo>
+<newElementsIDs>E973F74C-97F4-8BA7-D057-A0BC98FC1C28</newElementsIDs>
+<usedAttributes>
+<attributeRef>E973F74C-97F4-8BA7-D057-A0BC98FC1C28</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

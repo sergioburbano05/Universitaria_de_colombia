@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="D3D2AF4F-4876-6BB6-5B56-5D045457BCDF" containerWithKeyObject="B89E33B0-FC10-713C-E226-A01C65ABFF6F" localFKIndex="8DFB43C7-A613-05A1-C375-CC2CF6439BAC" name="Estadia_Corral_Corral_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>4F900D03-7640-FAAA-C82B-816F371CEB9F</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<referredTableLongName>Corral</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E17BF262-D582-E450-AF47-EF0015429915</referredTableID>
+<keyObject>A2F46F33-3A74-9076-EEBB-B7F6829E41BB</keyObject>
+<referredKeyID>A2F46F33-3A74-9076-EEBB-B7F6829E41BB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>Id_Corral,Estado_Corral_Id_Estado_Corral</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

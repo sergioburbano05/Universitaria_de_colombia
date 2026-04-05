@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="8B47E45A-33E2-84CE-57C1-C034E9A827A1" containerWithKeyObject="8F80B7E9-0146-8C9E-15F6-B373997C46DF" localFKIndex="769B6314-3B6D-2FE1-C0C6-217C52BCDD6F" name="Mascota_Estado_Mascota_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>029565B4-A76E-0937-D433-ADB52D93B911</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<referredTableLongName>Estado_Mascota</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>248E0B5E-6562-0293-3CFC-379663418F19</referredTableID>
+<keyObject>9EA7245A-F54A-548B-0013-5EC1FE69A157</keyObject>
+<referredKeyID>9EA7245A-F54A-548B-0013-5EC1FE69A157</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Estado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

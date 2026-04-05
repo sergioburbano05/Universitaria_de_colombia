@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D3036EA-FE15-BFD5-FEFD-57A9F40A45D8" name="Suministros Farmaceuticos">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:53:31 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Sum_Farm" id="9569E7BB-369F-BA71-2C91-2B79A226714B">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:53:44 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Medicamentos" id="9E043A2B-6540-303C-4B3B-892E2839E3CC">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:53:55 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="AA4025B7-8716-BD8D-BA1E-11EDBBDBFEBF">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:10 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dosis" id="1C1C0927-15BA-88E6-E7C6-D906FAD80459">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:23 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Metodo_Admon" id="50EC8730-1E0B-F71D-03DE-49E8BCFCDB77">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:29 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Stock" id="DA041995-2AC5-6F18-7FDA-956B239AB4CC">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:36 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nivel_Reorden" id="57889B28-7484-A57F-DCC8-B5662C905799">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:47 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Repedida" id="92B2682F-817D-DE9E-FBCB-1BD2A7196DC2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:54:56 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Costo" id="AA7E86F1-6835-A77D-2D50-1AA6F94CA97A">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:55:07 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Clinica" id="72533D33-FE1B-F10E-E3D0-49F2FCE59DBC">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 22:50:34 UTC</createdTime>
+<generatorID>E1563EAA-F2CF-7EDB-68FA-E79F72AEF691</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>40F8D402-C5A8-6708-1ADB-CD62D784F9DA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Ciudad" id="34F6D411-241C-2684-917F-E52E6986F579">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 00:53:09 UTC</createdTime>
+<generatorID>E1563EAA-F2CF-7EDB-68FA-E79F72AEF691</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>3555E648-9705-0747-8F73-3363D423BDB6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="89D4F650-D4FF-B9E5-506B-FFFDC3949825" name="Suministros Farmaceuticos PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-06 22:53:54 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9569E7BB-369F-BA71-2C91-2B79A226714B</attributeRef>
+<attributeRef>72533D33-FE1B-F10E-E3D0-49F2FCE59DBC</attributeRef>
+<attributeRef>34F6D411-241C-2684-917F-E52E6986F579</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

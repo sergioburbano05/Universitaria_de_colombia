@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E6D6CAA-A84E-6ADC-97AC-9A4BFA5AAA0A" name="Municipio">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>083C2F05-6EF5-02A6-65CD-6DB592914981</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Municipio" id="27C0ED6C-D8AF-135B-2CB9-014A58B5B827">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>C45CC962-123E-6EFB-79E2-CB4C596196DE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion_Municipio" id="FB1678E2-F3A9-E101-900C-4A68E2D94E03">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>EBEE7F1C-B4F6-A35D-B9E5-BB291517B90B</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento_Id_Departamento" id="6A69E9C9-2A46-71F8-DBB4-276F2955E3CA">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>5904D2DD-8E95-3098-9C03-5D4D2202088E</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19CCE691-3388-0985-B82C-93F17F33CF76" referredColumn="E468E230-363C-C5FE-56C3-CA984E5CD881"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E28A01F1-6411-951D-D052-FA689B8106D1" name="Municipio_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>8C547621-3D6D-AE7C-7A96-BE51F783CCC2</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27C0ED6C-D8AF-135B-2CB9-014A58B5B827"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFF08B5E-2F51-AE64-1004-E2D0A9E7206C" name="Municipio_Departamento_Id_Departamento_Descripcion_Municipio_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>1FBDCCEF-58AF-252E-09F4-A0B1112B6104</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A69E9C9-2A46-71F8-DBB4-276F2955E3CA"/>
+<colUsage columnID="FB1678E2-F3A9-E101-900C-4A68E2D94E03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D444B40-1519-BBA4-EFFE-BA879DCBE23A" name="Municipio_Departamento_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>49321EE6-FE40-6FEB-FD51-787413216EA4</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A69E9C9-2A46-71F8-DBB4-276F2955E3CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

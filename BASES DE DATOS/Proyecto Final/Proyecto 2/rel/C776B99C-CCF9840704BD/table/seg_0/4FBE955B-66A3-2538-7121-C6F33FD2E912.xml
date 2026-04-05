@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FBE955B-66A3-2538-7121-C6F33FD2E912" name="Examen_Tratamiento">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>00A105D6-1041-1C47-470D-8B6670B9049F</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Examen_Tratamiento" id="411B7435-E51F-E31C-75E9-F2C37665F599">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>78189A2F-58C0-6293-6671-61D92486FC9A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad_Tratamiento" id="72FFCFF1-3B31-13A0-4886-CFB0092FC9B1">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>209EBA6C-177D-E678-59DB-AD346B20CADA</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tratamiento_Id_Tratamiento" id="C824C317-096A-5409-BCB5-CB40AE151EF8">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>3D19DD83-DA7B-20DC-5742-1B1A388627C9</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B8F17B8-2C76-9F4C-ABBA-DC7EC793DCFE" referredColumn="DA6081FD-E73A-896B-D768-56808FE7A8F6"/>
+</associations>
+</Column>
+<Column name="Examen_Id_Examen" id="97C87CEB-B52A-0883-9CE6-F35E6E6BA32E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>445A855F-844E-EFC0-DFE0-0B17BF3444E7</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EB7C672-8A2E-F770-4EF5-95B5DA81F56D" referredColumn="24D5FC8D-2F82-0459-DC91-CE046C0544D7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2AEB690-8F37-4B72-1D25-E542CD044A13" name="Examen_Tratamiento_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>3FFE0FF3-C9D1-3EBC-C6A8-29C8B23B484E</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="411B7435-E51F-E31C-75E9-F2C37665F599"/>
+<colUsage columnID="C824C317-096A-5409-BCB5-CB40AE151EF8"/>
+<colUsage columnID="97C87CEB-B52A-0883-9CE6-F35E6E6BA32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00DB299B-033A-416A-8F66-B124213D18FE" name="Examen_Tratamiento_Tratamiento_Id_Tratamiento_Examen_Id_Examen_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>4720ED50-D6A2-10BE-2D9C-94FEBBE01170</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C824C317-096A-5409-BCB5-CB40AE151EF8"/>
+<colUsage columnID="97C87CEB-B52A-0883-9CE6-F35E6E6BA32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C64075C2-7567-7999-FBC7-83E8B4E3B265" name="Examen_Tratamiento_Tratamiento_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>17ADAC6C-423F-EF31-9B04-60B4882F4D80</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C824C317-096A-5409-BCB5-CB40AE151EF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="637955D0-A4F2-D63B-D940-DA881A74D759" name="Examen_Tratamiento_Examen_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-15 01:57:09 UTC</createdTime>
+<generatorID>1E693E3A-1DD9-76D4-85A6-715EFEFFB00E</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97C87CEB-B52A-0883-9CE6-F35E6E6BA32E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="2D4FE8F0-3613-5D2F-B9FA-7A3B93A29341" name="Estado_Corral">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>89477211-795C-C49A-3CF8-18F4E0482712</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Estado_Corral" id="86A243B3-07A7-0096-DF48-B37206DCBD2A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>120253E3-95B9-A428-12ED-7052BC6D5D8C</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion_Estado_Corral" id="FB09D0D5-1B7C-81F3-0442-51F5EF9D8286">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>10A0A4CA-745B-6FEA-1A17-CC59C4718D0E</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A72F7F5-8940-71C8-57E5-5A80903072E3" name="Estado_Corral_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>72286B38-CBAD-F5FE-9BD5-A0184B823763</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86A243B3-07A7-0096-DF48-B37206DCBD2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="363BD20E-ACB7-6010-F5F6-F36EE6341CF8" name="Estado_Corral_Descripcion_Estado_Corral_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>3DE538C9-0E36-239F-190D-9D4A8E6E8FF2</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB09D0D5-1B7C-81F3-0442-51F5EF9D8286"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

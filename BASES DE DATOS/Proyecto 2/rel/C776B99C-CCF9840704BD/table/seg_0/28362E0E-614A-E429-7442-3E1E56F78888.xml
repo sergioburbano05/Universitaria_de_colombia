@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28362E0E-614A-E429-7442-3E1E56F78888" name="Periodo">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>5DBA85FD-33AF-E542-FE23-1CD9533D4AD2</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Periodo" id="C5457BB9-4CDB-FC00-65DC-388F9063ECF1">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>012FE96D-C2E3-2F7D-C929-2EA7121D1866</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="A1B84003-D0BF-A722-F223-2E486FCBEFAC">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>DDBA1ACC-6191-A89A-639F-1B6F4BD3B6C6</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Anio" id="526955AF-1AFC-3226-ABC4-49FC8F76D157">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>9FCFF0D8-67F3-C3B4-551A-5B2711CA9029</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mes" id="D0DC5856-788B-4932-ACCF-CA7093A29D09">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>5C3F23FE-206F-55AF-1F6E-606CC51E0C69</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dia" id="79CCC84F-049E-A779-8442-7ABE784903E6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>FCF22872-7DC2-C44F-CC1E-22ECE8745332</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCDEDBB6-A498-CCD7-EAF9-008F399E473F" name="Periodo_PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>E0BA50C0-F9A2-CB73-04DD-C780299D3327</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C5457BB9-4CDB-FC00-65DC-388F9063ECF1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBD139F5-5276-F95B-4CF0-1766AF647624" name="Periodo_Fecha_Anio_Mes_Dia_UN">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:24:47 UTC</createdTime>
+<generatorID>305B1D4A-AE3B-CA3D-F573-41ED63525E7A</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1B84003-D0BF-A722-F223-2E486FCBEFAC"/>
+<colUsage columnID="526955AF-1AFC-3226-ABC4-49FC8F76D157"/>
+<colUsage columnID="D0DC5856-788B-4932-ACCF-CA7093A29D09"/>
+<colUsage columnID="79CCC84F-049E-A779-8442-7ABE784903E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

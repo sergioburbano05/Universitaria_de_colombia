@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5DBA85FD-33AF-E542-FE23-1CD9533D4AD2" name="Periodo">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:39 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Periodo" id="012FE96D-C2E3-2F7D-C929-2EA7121D1866">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:43 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="DDBA1ACC-6191-A89A-639F-1B6F4BD3B6C6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:49 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Anio" id="9FCFF0D8-67F3-C3B4-551A-5B2711CA9029">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:55 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Mes" id="5C3F23FE-206F-55AF-1F6E-606CC51E0C69">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:00 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia" id="FCF22872-7DC2-C44F-CC1E-22ECE8745332">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:01:03 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E0BA50C0-F9A2-CB73-04DD-C780299D3327" name="Periodo PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:00:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>012FE96D-C2E3-2F7D-C929-2EA7121D1866</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="305B1D4A-AE3B-CA3D-F573-41ED63525E7A" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 18:20:18 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="C776B99C-71AC-87BF-5204-CCF9840704BD" value="true"/>
+</engineerTo>
+<newElementsIDs>DDBA1ACC-6191-A89A-639F-1B6F4BD3B6C6,9FCFF0D8-67F3-C3B4-551A-5B2711CA9029,5C3F23FE-206F-55AF-1F6E-606CC51E0C69,FCF22872-7DC2-C44F-CC1E-22ECE8745332</newElementsIDs>
+<usedAttributes>
+<attributeRef>DDBA1ACC-6191-A89A-639F-1B6F4BD3B6C6</attributeRef>
+<attributeRef>9FCFF0D8-67F3-C3B4-551A-5B2711CA9029</attributeRef>
+<attributeRef>5C3F23FE-206F-55AF-1F6E-606CC51E0C69</attributeRef>
+<attributeRef>FCF22872-7DC2-C44F-CC1E-22ECE8745332</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

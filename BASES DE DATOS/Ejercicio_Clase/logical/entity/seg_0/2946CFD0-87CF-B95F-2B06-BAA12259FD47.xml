@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2946CFD0-87CF-B95F-2B06-BAA12259FD47" name="RecursosXActividad">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:11:57 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Actividad" id="8FB824F9-E996-34B0-5AC4-C5380E6883D2">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:12:33 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Recurso" id="AAA7B2BD-CB03-9A6A-4C92-95BCB09EFD76">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:12:53 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad_Actividad" id="92B761C9-5974-7446-4868-7BA60C6B8571">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:13:00 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Actividad1" id="E0E0BA04-AF39-F695-3732-FDC0492896A1">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:18:25 UTC</createdTime>
+<generatorID>8CBDE499-3E1F-CA40-AB23-3380FE976D40</generatorID>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<referedAttribute>D38817F9-C1A7-AD93-7478-524570915808</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Recurso1" id="86EB8FEE-186C-F672-BA87-2CA400B51E99">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:18:46 UTC</createdTime>
+<generatorID>91718739-5E81-BAD6-EDFF-93E014E2273E</generatorID>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<referedAttribute>E0FD1705-985E-642C-1EC8-42B512C869F2</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7D4F3C2B-44A9-8046-8F80-8E7655FE8722" name="RecursosXActividad PK">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-05 00:12:52 UTC</createdTime>
+<ownerDesignName>Ejercicio_Clase</ownerDesignName>
+<engineerTo>
+<item key="C6007874-B5A3-EF1F-3EDC-2FF262F71C18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8FB824F9-E996-34B0-5AC4-C5380E6883D2</attributeRef>
+<attributeRef>AAA7B2BD-CB03-9A6A-4C92-95BCB09EFD76</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

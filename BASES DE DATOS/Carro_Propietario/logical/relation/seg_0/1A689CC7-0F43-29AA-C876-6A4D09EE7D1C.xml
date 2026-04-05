@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Dueno" directorySegmentName="seg_0" id="1A689CC7-0F43-29AA-C876-6A4D09EE7D1C">
+<createdBy>Elizabet</createdBy>
+<createdTime>2023-09-01 02:06:36 UTC</createdTime>
+<ownerDesignName>Carro_Propietario</ownerDesignName>
+<engineerTo>
+<item key="AF8A5CD5-30C0-106C-6169-2609A19EBB4F" value="true"/>
+</engineerTo>
+<sourcePk>4162B294-58CA-C86D-98C5-3EF90F2BE4AF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7BA9F8D3-26DA-3642-2E32-D1826D81D576</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5B0056A4-9444-E266-9645-1A08F053820A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

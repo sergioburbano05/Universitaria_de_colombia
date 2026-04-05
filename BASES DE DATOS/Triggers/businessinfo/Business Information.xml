@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="B0E6A164-EB66-3E56-535B-82BDC4C23455">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 01:48:14 UTC</createdTime>
+<ownerDesignName>Triggers</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

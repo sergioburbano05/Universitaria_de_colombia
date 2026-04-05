@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="B3BC8DBE-8D24-DF2C-0EA3-6873599295BB">
+<createdBy>Elizabet</createdBy>
+<modifiedBy>Elizabet</modifiedBy>
+<createdTime>2023-09-05 01:11:59 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A3F120A1-0598-F584-A5AA-9AFA28CD7D89" otype="Entity" vid="AEAC26DA-5E8E-6618-B652-9C67E8022FC7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="125" y="89" width="94" height="68"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="CB962D10-8F5E-2997-0B09-45BFEFDD7D8D" otype="Entity" vid="76624979-408F-2AED-2308-300AB2751225">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="430" y="89" width="94" height="54"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="986761C9-6E87-21E2-A778-14871C239696" otype="Relation" vid_source="AEAC26DA-5E8E-6618-B652-9C67E8022FC7" vid_target="76624979-408F-2AED-2308-300AB2751225">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<sourceLabel class="oracle.dbtools.crest.model.design.Label">
+<site>0</site>
+<labelBounds x="229" y="86" width="54" height="30"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</sourceLabel>
+<targetLabel class="oracle.dbtools.crest.model.design.Label">
+<site>2</site>
+<labelBounds x="367" y="119" width="57" height="30"/>
+<noBackgroundColor>true</noBackgroundColor>
+<noForegroundColor>true</noForegroundColor>
+</targetLabel>
+<points>
+<point x="219" y="116"/>
+<point x="430" y="116"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

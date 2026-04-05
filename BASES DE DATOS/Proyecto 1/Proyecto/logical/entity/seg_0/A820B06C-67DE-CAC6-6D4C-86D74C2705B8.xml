@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A820B06C-67DE-CAC6-6D4C-86D74C2705B8" name="Posicion">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:32:46 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Posicion" id="5DC760EA-78EE-EC1F-8B2D-8D519BB970CD">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:32:52 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion_Posicion" id="44752644-6860-218B-0F78-2F2BB02CA0E6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:33:32 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Salario_Anual" id="0A7C5907-4B71-A1FB-C7F6-7FEA28C36873">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:41:18 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Salario_Mensual" id="FE35F467-DACE-573B-D09D-E736F3EA1358">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 23:41:28 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A709A12-9157-9887-8AFB-6EDE860CA467" name="Posicion PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 16:33:31 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5DC760EA-78EE-EC1F-8B2D-8D519BB970CD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5C94DAB6-AC47-8B48-F96E-1A5A0306F504" name="Key_2">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:01:10 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<newElementsIDs>44752644-6860-218B-0F78-2F2BB02CA0E6</newElementsIDs>
+<usedAttributes>
+<attributeRef>44752644-6860-218B-0F78-2F2BB02CA0E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

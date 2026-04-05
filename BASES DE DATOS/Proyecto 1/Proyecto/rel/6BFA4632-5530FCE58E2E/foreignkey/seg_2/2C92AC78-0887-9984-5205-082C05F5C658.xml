@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="2C92AC78-0887-9984-5205-082C05F5C658" containerWithKeyObject="41E6675D-6713-7108-6262-E75B579A8FF5" localFKIndex="CA703AE2-6C70-E172-16F5-1618D77F046E" name="Factura_Pagada_Cita_FK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-13 01:17:54 UTC</createdTime>
+<generatorID>7802235F-724F-19CF-35A5-9C6B2C655235</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<referredTableLongName>Cita</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>884F4459-96FE-34FC-6942-102E4B6BC4AD</referredTableID>
+<keyObject>CCBF593D-D7EA-D5FB-45A4-7C7896932E7F</keyObject>
+<referredKeyID>CCBF593D-D7EA-D5FB-45A4-7C7896932E7F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Cita</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

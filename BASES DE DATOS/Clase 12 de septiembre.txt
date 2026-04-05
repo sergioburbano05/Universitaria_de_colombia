@@ -1,0 +1,46 @@
+Clase Bases de Datos 12 de septiembre de 2023 
+
+
+VIEWS 
+- La problemática principal es el tema de seguridad
+- En las vistas podemos ocultar columnas o información que no queremos que vean 
+- Es una tabla virtual, básicamente se construyen sobre una tabla base 
+- Se le llama tabla virtual porque realmente no tiene las filas creadas en el disco duro 
+- Se crea con create view, aquí hay una penalidad de rendimiento, pero esto es mínimo 
+- La vista siempre está actualizada con los datos de la tabla base 
+- Create materialize view (tablas fijas) 
+- Grant update select on tabla to usuario (permisos a usuarios)
+- Select * from usuario.tabla (para acceder a las vistas)
+
+
+
+create or replace view  v_general as
+select c.NOMBRE, t.ANIO, t.MES, t.DIA, v.INGRESO, v.COSTO
+from CLIENTE c, TIEMPO t, VENTAS v
+where v.ID_TIEMPO = t.ID_TIEMPO 
+and v.ID_CLIENTE = c.ID_CLIENTE
+;
+
+create or replace view  v_ventas_cliente as
+select c.NOMBRE, sum(v.INGRESO) as ingresos, sum(v.COSTO) as costo
+from CLIENTE c, VENTAS v
+where v.ID_CLIENTE = c.ID_CLIENTE
+group by c.NOMBRE
+order by c.NOMBRE
+;
+
+create or replace view  v_costo_periodo as
+select t.ANIO, t.MES, trunc(avg(v.COSTO),0) as Prom_Costo
+from TIEMPO t, VENTAS v
+where v.ID_TIEMPO = t.ID_TIEMPO 
+group by t.ANIO, t.MES
+order by t.ANIO, t.MES
+;
+
+
+select t.ANIO, t.MES, t.DIA, trunc(sum(v.COSTO),0) as Prom_Costo
+from TIEMPO t, VENTAS v
+where v.ID_TIEMPO = t.ID_TIEMPO 
+group by rollup (t.ANIO, t.MES, t.DIA)
+order by t.ANIO, t.MES, t.DIA
+;

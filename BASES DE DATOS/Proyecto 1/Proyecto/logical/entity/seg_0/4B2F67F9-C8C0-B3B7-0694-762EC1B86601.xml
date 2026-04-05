@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B2F67F9-C8C0-B3B7-0694-762EC1B86601" name="Tratamiento_Corral">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:48:59 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Tratamiento_Corral" id="E0EF7DFB-ECBB-A681-21B7-DE3B3A39E6F6">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:49:08 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estadia" id="917541BD-54EB-4A2B-B45D-FE4795B2877E">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:49:50 UTC</createdTime>
+<generatorID>A5964C1E-7066-EC7C-410C-22EB3B7CDBD7</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BAA48E9E-8879-B969-0183-F080F2B26E49</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Examen_Tratamiento" id="ECD2A9C1-7E4A-F900-0B5F-D32D59686848">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 02:57:55 UTC</createdTime>
+<generatorID>192BC449-03D4-87BD-BF27-43A8967DC686</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F0AB2AD2-8FE5-E3A1-22CC-66F0F6A89D1C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Factura_Por_Pagar" id="869FA735-5017-3BCB-F885-3704B716FA6A">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-12 22:54:51 UTC</createdTime>
+<generatorID>7EB306E1-68D6-B0DF-BCFF-A749E9DC388B</generatorID>
+<ownerDesignName>Proyecto</ownerDesignName>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="true"/>
+</engineerTo>
+<referedAttribute>C8C5744E-8A7B-1CCF-4500-80A3AE2CB77A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB648685-015F-1D83-BD5F-1F4E39814130" name="Tratamiento_Corral PK">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-10 17:49:18 UTC</createdTime>
+<ownerDesignName>Proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="6BFA4632-7721-3957-ED3F-5530FCE58E2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0EF7DFB-ECBB-A681-21B7-DE3B3A39E6F6</attributeRef>
+<attributeRef>869FA735-5017-3BCB-F885-3704B716FA6A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

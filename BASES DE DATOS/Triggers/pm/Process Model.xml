@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="B98B382A-4160-DC78-91B3-114ABA663D46">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 01:48:14 UTC</createdTime>
+<ownerDesignName>Triggers</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

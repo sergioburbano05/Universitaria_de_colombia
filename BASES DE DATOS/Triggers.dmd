@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Triggers" id="2A20CFF0-A34C-2EA7-031B-C5BFCE62B66E" version="3.5">
+<createdBy>elica</createdBy>
+<createdTime>2023-09-14 01:48:13 UTC</createdTime>
+<ownerDesignName>Triggers</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2A20CFF0-A34C-2EA7-031B-C5BFCE62B66E</designId>
+</OSDM_Design>
