@@ -1,0 +1,9 @@
+Identifique las entidades principales del sistema.
+Cliente
+Envío
+Paquete
+Empleado
+Vehículo
+Ruta
+CentroDistribución
+EstadoEnvío

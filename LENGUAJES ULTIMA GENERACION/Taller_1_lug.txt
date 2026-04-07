@@ -1,0 +1,119 @@
+📘 Taller: Diseño de Modelo Relacional (Nivel Conceptual)
+🎯 Objetivo
+
+Que los estudiantes comprendan y apliquen los fundamentos del modelo relacional mediante el diseño de un modelo conceptual a partir de un caso real de la industria.
+
+🧠 Contexto del caso (Industria real)
+
+Una empresa de logística llamada "FastDelivery" desea desarrollar un sistema de información para gestionar sus operaciones de envíos a nivel nacional.
+
+La empresa necesita almacenar información sobre:
+
+Clientes que solicitan envíos
+Paquetes enviados
+Empleados (repartidores)
+Vehículos utilizados para la entrega
+Rutas de distribución
+Centros de distribución
+Estados de los envíos (en tránsito, entregado, retrasado, etc.)
+
+📋 Requerimientos del sistema
+*   Un cliente puede realizar múltiples envíos.
+*   Cada envío corresponde a un solo cliente.
+*   Un envío contiene uno o varios paquetes.
+*   Cada paquete tiene peso, dimensiones y tipo de contenido.
+*   Cada envío es asignado a un repartidor.
+*   Un repartidor puede gestionar varios envíos.
+*   Cada repartidor utiliza un vehículo.
+*   Un vehículo puede ser utilizado por diferentes repartidores en distintos momentos.
+*   Los envíos siguen una ruta específica.
+*   Una ruta puede incluir varios centros de distribución.
+*   Cada envío tiene un historial de estados (tracking).
+
+🧩 Actividades
+🔹 Parte 1: Identificación de entidades
+
+Identifique las entidades principales del sistema.
+
+🔹 Parte 2: Definición de atributos
+Para cada entidad, defina al menos:
+Clave primaria
+4 a 6 atributos relevantes
+
+👉 Ejemplo:
+
+Cliente
+
+id_cliente (PK)
+nombre
+dirección
+teléfono
+email
+
+🔹 Parte 3: Relaciones
+
+Defina las relaciones entre entidades, indicando:
+Cardinalidad (1:1, 1:N, N:M)
+
+👉 Ejemplo:
+
+Cliente (1) —— (N) Envío
+Envío (1) —— (N) Paquete
+
+🔹 Parte 4: Modelo Entidad-Relación (MER)
+
+Construya el diagrama MER que represente:
+
+Entidades
+Relaciones
+Atributos
+Cardinalidades
+
+🔹 Parte 5: Paso a modelo relacional
+
+Transforme el MER a tablas relacionales:
+
+Definir tablas
+Claves primarias
+Claves foráneas
+Tablas intermedias (para relaciones N:M)
+🔹 Parte 6: Reglas de negocio
+
+Defina al menos 5 reglas de negocio adicionales.
+
+👉 Ejemplo:
+
+Un envío no puede estar en estado "entregado" si no tiene repartidor asignado.
+El peso total de los paquetes no debe exceder la capacidad del vehículo.
+
+🧪 Entregables
+Documento con:
+Identificación de entidades
+Atributos
+Relaciones
+Diagrama MER (imagen o PDF)
+Modelo relacional (tablas)
+Reglas de negocio
+
+🧑‍🏫 Criterios de evaluación
+Criterio	Porcentaje
+Identificación de entidades	20%
+Definición de atributos	20%
+Relaciones y cardinalidad	20%
+Diagrama MER	20%
+Modelo relacional correcto	20%
+
+Implemente el modelo en un gestor de bases de datos como:
+
+MySQL
+PostgreSQL
+
+Y cree:
+
+Script SQL de creación (DDL)
+Inserciones de prueba (DML)
+💡 Preguntas de reflexión
+¿Qué dificultades encontró al identificar las relaciones?
+¿Qué decisiones tomó para resolver ambigüedades?
+¿Cómo garantiza la integridad de los datos?
+
