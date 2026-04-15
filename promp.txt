@@ -1,0 +1,28 @@
+    Actúa como un profesor universitario experto en ingeniería de sistemas  y software|. Necesito que generes una presentación completa (tipo diapositivas)  para cada sesion  
+    La presentación debe tener : 
+    * Tener entre 30 y 40 diapositivas cada una 
+    * Estar organizada de forma didáctica y progresiva 
+    * Incluir títulos y contenido por diapositiva 
+    * Usar lenguaje claro pero técnico (nivel intermedio) Contenido a cubrir:
+    (
+        sesion 8 
+    Performance testing 
+        Las pruebas de rendimiento
+    )
+    * Buenas prácticas 
+    * Errores comunes 
+    * Ejercicio propuesto para estudiantes 
+    * Incluye ejemplos reales explicados en al menos 4 diapositivas extra 
+    * Sugiere ideas visuales para cada diapositiva (gráficos o diagramas) 
+
+    tambien un documento  pdf resumen de clase  
+    docente  : magister  sergio  alejandro  burbano mena  
+    universidad : universitaria de colombia  
+    materia:  Pruebas de software
+    semestre: 7
+    carrera : ing. software
+
+    un taller para realizar en clase   ipynb
+    archivo con solucion del taller  ipynb
+
+
