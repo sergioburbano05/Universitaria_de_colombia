@@ -5,9 +5,11 @@
     * Incluir títulos y contenido por diapositiva 
     * Usar lenguaje claro pero técnico (nivel intermedio) Contenido a cubrir:
     (
-        sesion 8 
-    Performance testing 
-        Las pruebas de rendimiento
+        sesion 9 
+Por qué y cómo automatizar 
+nuestras pruebas 
+    servidor de continuous integration. 
+servicio en la nube
     )
     * Buenas prácticas 
     * Errores comunes 
@@ -22,7 +24,7 @@
     semestre: 7
     carrera : ing. software
 
-    un taller para realizar en clase   ipynb
-    archivo con solucion del taller  ipynb
+    un archivo con Ejercicios de ejemplo
+    
 
 

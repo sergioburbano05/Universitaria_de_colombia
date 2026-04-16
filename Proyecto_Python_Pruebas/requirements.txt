@@ -1,0 +1,9 @@
+pytest>=7.0
+pytest-cov>=4.0
+coverage>=6.5
+black>=23.0
+isort>=5.10
+flake8>=5.0
+pylint>=2.15
+bandit>=1.7
+safety>=2.3
