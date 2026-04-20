@@ -1,15 +1,24 @@
-    Actúa como un profesor universitario experto en ingeniería de sistemas  y software|. Necesito que generes una presentación completa (tipo diapositivas)  para cada sesion  
+docente  : magister  sergio  alejandro  burbano mena  
+universidad : universitaria de colombia  
+materia:  PRUEBAS DE SOFTWARE 
+semestre: 7
+carrera : ing.SOTWARE
+    
+Actúa como un profesor universitario experto en ingeniería de sistemas  y software. 
+1.Necesito que generes una presentación completa (tipo diapositivas)  para cada sesion  
     La presentación debe tener : 
     * Tener entre 30 y 40 diapositivas cada una 
     * Estar organizada de forma didáctica y progresiva 
     * Incluir títulos y contenido por diapositiva 
+    * ser secuencial  y  ennlo poible no repetir temas mirados en sesiones anteriores
     * Usar lenguaje claro pero técnico (nivel intermedio) Contenido a cubrir:
     (
-        sesion 9 
-Por qué y cómo automatizar 
-nuestras pruebas 
-    servidor de continuous integration. 
-servicio en la nube
+        SESION 11 - 14 
+• Exploratory testing 
+	• Programación de Testing y Dinamica 
+	• Generalidades de la programación dinámica 
+	• Resolución de un problema de programación. 
+	• Terminología
     )
     * Buenas prácticas 
     * Errores comunes 
@@ -17,14 +26,14 @@ servicio en la nube
     * Incluye ejemplos reales explicados en al menos 4 diapositivas extra 
     * Sugiere ideas visuales para cada diapositiva (gráficos o diagramas) 
 
-    tambien un documento  pdf resumen de clase  
-    docente  : magister  sergio  alejandro  burbano mena  
-    universidad : universitaria de colombia  
-    materia:  Pruebas de software
-    semestre: 7
-    carrera : ing. software
+2.tambien un documento  pdf resumen de clase  
+    
+3.un archivo con ejersicion practicos  resueltos 
+4.un taller  corto sobre los temas vistos 
+5.soluciuon del taller 
 
-    un archivo con Ejercicios de ejemplo
+recuerda que son 5 documentos por cada sesion  
+
     
 
 
