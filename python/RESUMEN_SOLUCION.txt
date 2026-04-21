@@ -1,0 +1,82 @@
+﻿RESUMEN SOLUCION - Ejercicios Resueltos Sesion 12
+Testing Dinamico * Mutation Testing * Property-Based Testing
+=============================================================
+
+FECHA        : 21 de abril de 2026
+DOCENTE      : Mg. Sergio Alejandro Burbano Mena
+UNIVERSIDAD  : Universitaria de Colombia
+SEMESTRE     : 7mo - Pruebas de Software
+
+ESTRUCTURA
+==========
+python/
+|-- src/
+|   |-- ejercicio_1.py    <- calcular_descuento
+|   |-- ejercicio_2.py    <- validar_matricula
+|   |-- ejercicio_3.py    <- promedio_ponderado
+|   +-- ejercicio_4.py    <- revertir, es_palindromo, concatenar_lista
+|-- tests/
+|   |-- test_ejercicio_1.py    <- 14 tests  (EP + BVA)
+|   |-- test_ejercicio_2.py    <- 16 tests  (Branch Coverage)
+|   |-- test_ejercicio_3.py    <-  5 tests  (Mutation Testing)
+|   +-- test_ejercicio_4.py    <-  3 tests  (Property-Based Testing)
+|-- requirements.txt
+|-- pytest.ini
+|-- conftest.py
+|-- QUICK_START.py
++-- README.md
+
+ESTADISTICAS
+============
+Tests totales   : 38
+Tests pasando   : 38 (100%)
+Cobertura       : 100% en los 4 modulos src/
+Tiempo ejecucion: ~1 segundo
+
+EJERCICIOS
+==========
+
+EJERCICIO 1 - Clases de Equivalencia y BVA
+  Funcion : calcular_descuento(edad, es_estudiante)
+  Tecnica : Equivalence Partitioning + Boundary Value Analysis
+  Tests   : 14 (parametrizados)
+  Clases  : C1-C7 (7 clases de equivalencia)
+  Limites : -1, 0, 17, 18, 59, 60, 120, 121
+
+EJERCICIO 2 - Branch Coverage 100%
+  Funcion : validar_matricula(estudiante)
+  Tecnica : Branch Coverage
+  Tests   : 16 (6 ramas + 10 parametrizados)
+  Ramas   : R1 DATOS_VACIOS / R2 INACTIVO / R3 DEUDA
+            R4 CREDITOS_INVALIDOS / R5 HABILITADO-CONDICIONAL
+
+EJERCICIO 3 - Mutation Testing
+  Funcion : promedio_ponderado(notas, pesos)
+  Tecnica : Mutation Testing (diseno manual)
+  Tests   : 5
+  Mutantes: 6/6 eliminados (score 100%)
+  Ops     : ROR (!= > <) / AOR (* + / *)
+
+EJERCICIO 4 - Property-Based Testing (Hypothesis)
+  Funciones: revertir, es_palindromo, concatenar_lista
+  Tecnica  : Property-Based Testing (@given)
+  Tests    : 3 propiedades
+  Props    : Involutiva / Palindromo / Reversible
+  Ejemplos : ~100 generados automaticamente por propiedad
+
+COMO EJECUTAR
+=============
+
+  pip install -r requirements.txt
+  pytest
+  pytest --cov=src --cov-report=html
+
+  Por ejercicio:
+  pytest tests/test_ejercicio_2.py --cov=src.ejercicio_2 --cov-report=term-missing
+
+DEPENDENCIAS
+============
+  pytest==7.4.3
+  pytest-cov==4.1.0
+  hypothesis==6.92.2
+  pytest-mock==3.12.0
