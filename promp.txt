@@ -13,27 +13,20 @@ Actúa como un profesor universitario experto en ingeniería de sistemas  y soft
     * ser secuencial  y  ennlo poible no repetir temas mirados en sesiones anteriores
     * Usar lenguaje claro pero técnico (nivel intermedio) Contenido a cubrir:
     (
-        SESION 11 - 14 
-• Exploratory testing 
-	• Programación de Testing y Dinamica 
-	• Generalidades de la programación dinámica 
-	• Resolución de un problema de programación. 
-	• Terminología
+     SESION 16  - 19 
+• Etapas y estados en 
+programación dinámica 
+    Algoritmos de solución 
+    El problema de la mochila 
+    Cálculo de los números de Fibonacci
+    Calculo de los coeficientes binomiales 
+    La subsecuencia común máxima 
+    El problema del camino de mínimo costo 
+    Asignación  de recursos
     )
-    * Buenas prácticas 
-    * Errores comunes 
-    * Ejercicio propuesto para estudiantes 
-    * Incluye ejemplos reales explicados en al menos 4 diapositivas extra 
-    * Sugiere ideas visuales para cada diapositiva (gráficos o diagramas) 
-
-2.tambien un documento  pdf resumen de clase  
-    
-3.un archivo con ejersicion practicos  resueltos 
-4.un taller  corto sobre los temas vistos 
-5.soluciuon del taller 
-
-recuerda que son 5 documentos por cada sesion  
-
+2.tambien un documento  pdf apoyo para el docente
+  
+4.un solo taller con todos los temas vistos en python
     
 
 

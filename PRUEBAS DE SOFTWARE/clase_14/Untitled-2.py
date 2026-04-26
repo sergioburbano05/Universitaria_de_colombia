@@ -53,7 +53,7 @@ def min_path_sum_con_camino(grid: list):
 
 def ejecutar_min_path_sum_con_camino():
     # Ejemplo de costo mínimo con reconstrucción del camino.
-    grid = [[1,3,1],[1,5,1],[4,2,1]]
+    grid = [[1,3,1,6],[2,5,1,1],[1,4,2,1],[1,2,3,4]]
     costo, camino, dp = min_path_sum_con_camino(grid)
     print(f'Costo: {costo}')
     print(f'Camino: {camino}')
@@ -113,11 +113,12 @@ def subset_sum_con_elementos(nums: list, target: int):
 
 def ejecutar_subset_sum_con_elementos():
     # Ejemplos de subconjunto que sí existe y otro que no existe.
-    existe, elems = subset_sum_con_elementos([3,34,4,12,5,1], 51)
+    objetivo=68
+    existe, elems = subset_sum_con_elementos([3,34,4,12,5,1,2,25,17], objetivo)
     print(f'{existe}, elementos: {elems}')
 
-    existe, elems = subset_sum_con_elementos([3,34,4,12,5,1], 38)
-    print(f'{existe}, elementos: {elems}')
+    existe, elems = subset_sum_con_elementos([3,34,2,12,5,1], objetivo)
+    print(f'{existe}, elementos: {elems} para  sumar {objetivo} ')
 
 
 

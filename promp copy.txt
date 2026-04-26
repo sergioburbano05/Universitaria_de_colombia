@@ -1,0 +1,65 @@
+docente  : magister  sergio  alejandro  burbano mena  
+universidad : universitaria de colombia  
+materia:  lenguajes de ultima generacion
+semestre: 4
+carrera : ing.sistemas
+    
+Actúa como un profesor universitario experto en ingeniería de sistemas  y software. 
+1.Necesito que generes una presentación completa (tipo diapositivas)  para cada sesion  
+    La presentación debe tener : 
+    * Tener entre 30 y 40 diapositivas cada una 
+    * Estar organizada de forma didáctica y progresiva 
+    * Incluir títulos y contenido por diapositiva 
+    * ser secuencial  y  en lo poible no repetir temas mirados en sesiones anteriores
+    * Usar lenguaje claro pero técnico (nivel intermedio) Contenido a cubrir:
+    (
+        Sesión 16. Lenguajes de última generación (2 horas) 
+• Ejercicios de Modelamiento. 
+• Lenguajes compatibles. 
+Recursos: Plataforma Moodle, videos, cátedra magistral, presentación PPT o similar de ser 
+necesario. 
+Objetivo de la sesión: Practicar el diseño de bases de datos según un tema en específico. 
+
+        Sesión 17. Lenguajes de última generación (2 horas) 
+• Ejercicios de Modelamiento. 
+• Lenguajes compatibles. 
+Recursos: Plataforma Moodle, videos, cátedra magistral, presentación PPT o similar de ser 
+necesario. 
+Objetivo de la sesión: Practicar el diseño de bases de datos según un tema en específico. 
+ 
+Sesión 18. Generación y desarrollo de aplicaciones con Herramientas Case (2 horas) 
+• Herramientas CASE Oracle Database 12C, evolución y beneficios 
+• Repositorio, estructura y actualización. 
+Recursos: Plataforma Moodle, videos, cátedra magistral, presentación PPT o similar de ser 
+necesario. 
+Objetivo de la sesión: Proporcionar la información correspondiente al tema y explicar su 
+pertinencia con el quehacer empresarial, profesional y laboral, desde el punto de vista de los 
+análisis y diagnósticos organizacionales. Verificar la comprensión del tema por parte del 
+discente. 
+ 
+Sesión 19. Generación y desarrollo de aplicaciones con Herramientas Case (2 horas) 
+• Generación de Código y Documentación a partir del repositorio de una herramienta 
+CASE Oracle 12C 
+• Laboratorio de implementación de bases de datos en Oracle Database 12C 
+Recursos: Plataforma Moodle, videos, cátedra magistral, presentación PPT o similar de ser 
+necesario. 
+Objetivo de la sesión: Proporcionar la información correspondiente al tema y explicar su 
+pertinencia con el quehacer empresarial, y su importancia en el funcionamiento de los sistemas. 
+Verificar la comprensión del tema por parte del discente. 
+        
+    )
+    * Buenas prácticas 
+    * Errores comunes 
+    * Ejercicio propuesto para estudiantes 
+    * Incluye ejemplos reales explicados en al menos 4 diapositivas extra 
+    * Sugiere ideas visuales para cada diapositiva (gráficos o diagramas) 
+
+2.tambien un documento  pdf guia  para el profesor
+  
+3.un taller  corto sobre los temas vistos 
+4.soluciuon del taller 
+
+
+    
+
+
