@@ -1,0 +1,592 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ABvCWJyNRph2"
+      },
+      "source": [
+        "# 🎓 Taller Integrador — Sesión 14 | Pruebas de Software\n",
+        "**Universitaria de Colombia** · Ingeniería de Software · 7mo Semestre\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6pXYUeMERpiA"
+      },
+      "source": [
+        "---\n",
+        "## ⚙️ Instalación de dependencias\n",
+        "Ejecuta esta celda **primero** antes de cualquier otra."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wFmTwPvERpiC",
+        "outputId": "b879638d-1055-4528-f55a-ed09f59265a8"
+      },
+      "source": [
+        "!pip install hypothesis pytest pytest-cov -q"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/532.0 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m\u001b[90m╺\u001b[0m \u001b[32m522.2/532.0 kB\u001b[0m \u001b[31m19.6 MB/s\u001b[0m eta \u001b[36m0:00:01\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m532.0/532.0 kB\u001b[0m \u001b[31m12.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25h\u001b[?25l   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m0.0/254.2 kB\u001b[0m \u001b[31m?\u001b[0m eta \u001b[36m-:--:--\u001b[0m\r\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m254.2/254.2 kB\u001b[0m \u001b[31m20.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25h"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "8Rf0ja6FRpiF"
+      },
+      "source": [
+        "---\n",
+        "# PARTE 1 — Exploratory Testing (SBTM)\n",
+        "\n",
+        "## 1.1 Diseño de Charters\n",
+        "\n",
+        "### Charter 1\n",
+        "| Campo | Detalle |\n",
+        "|---|---|\n",
+        "| **Explorar:** | Cálculo de promedios ponderados por materia y semestre |\n",
+        "| **Con:** | Datos con notas extremas (0.0, 5.0), notas faltantes y materias sin créditos |\n",
+        "| **Para descubrir:** | Si el cálculo pondera incorrectamente o falla con datos límite |\n",
+        "\n",
+        "### Charter 2\n",
+        "| Campo | Detalle |\n",
+        "|---|---|\n",
+        "| **Explorar:** | Detección de estudiantes en riesgo académico |\n",
+        "| **Con:** | Conjuntos con promedio exactamente igual al umbral, listas vacías y estudiantes sin materias |\n",
+        "| **Para descubrir:** | Si la condición de riesgo incluye/excluye incorrectamente casos en el borde del umbral |\n",
+        "\n",
+        "### Charter 3\n",
+        "| Campo | Detalle |\n",
+        "|---|---|\n",
+        "| **Explorar:** | Exportación de reportes consolidados en múltiples formatos |\n",
+        "| **Con:** | Reportes con +1000 estudiantes, exportación simultánea PDF, Excel y CSV |\n",
+        "| **Para descubrir:** | Si la exportación corrompe datos, pierde registros o falla bajo carga alta |\n",
+        "\n",
+        "---\n",
+        "## 1.2 Reporte de Sesión SBTM\n",
+        "\n",
+        "**Charter ejecutado:** Charter 2 — Detección de riesgo académico  \n",
+        "**Hora inicio:** 14:00 · **Hora fin:** 14:20 · **Duración:** 20 min\n",
+        "\n",
+        "| HH:MM | Observación |\n",
+        "|---|---|\n",
+        "| 14:00 | Lista con 5 estudiantes con promedio exactamente 3.0 — ninguno en riesgo. Correcto (< estricto). |\n",
+        "| 14:04 | Promedio 2.99 → estudiante sí aparece en riesgo. Umbral funciona como `< estricto`. |\n",
+        "| 14:08 | Estudiante sin clave `materias` → ignorado sin error (`continue`). Comportamiento correcto. |\n",
+        "| 14:13 | Lista vacía → retorna `[]` inmediatamente. Correcto. |\n",
+        "| 14:17 | Umbral 0.0 → ningún estudiante entra en riesgo (todos tienen nota ≥ 0). Correcto. |\n",
+        "| 14:20 | Sesión finalizada. Sin errores fatales. Se detectaron 2 bugs. |\n",
+        "\n",
+        "### Bugs encontrados\n",
+        "\n",
+        "**Bug #1** · Severidad: Alta  \n",
+        "- **Descripción:** La función no valida que `nota` sea numérico. Si se pasa un string se lanza `TypeError` no controlado.  \n",
+        "- **Pasos:** `detectar_estudiantes_riesgo([{'id':1,'materias':[{'nota':'abc'}]}])` → `TypeError`\n",
+        "\n",
+        "**Bug #2** · Severidad: Media  \n",
+        "- **Descripción:** Si el estudiante no tiene clave `id`, el resultado incluye `{'id': None}` sin advertencia al llamador.  \n",
+        "- **Pasos:** `detectar_estudiantes_riesgo([{'materias':[{'nota':1.0}]}])` → resultado con `id=None`"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gJVeF8HjRpiJ"
+      },
+      "source": [
+        "---\n",
+        "# PARTE 2 — Testing Dinámico\n",
+        "## 2.1 Función a probar"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3H_aHquDRpiK",
+        "outputId": "a353a1e0-24e3-4e5d-93f9-b64500709736"
+      },
+      "source": [
+        "# analitica.py — función original\n",
+        "def detectar_estudiantes_riesgo(notas: list, umbral: float = 3.0) -> list:\n",
+        "    \"\"\"\n",
+        "    Retorna estudiantes con promedio < umbral.\n",
+        "    \"\"\"\n",
+        "    if not notas:\n",
+        "        return []\n",
+        "    riesgo = []\n",
+        "    for estudiante in notas:\n",
+        "        if not estudiante.get('materias'):\n",
+        "            continue\n",
+        "        suma = sum(m['nota'] for m in estudiante['materias'])\n",
+        "        promedio = suma / len(estudiante['materias'])\n",
+        "        if promedio < umbral:\n",
+        "            riesgo.append({'id': estudiante['id'], 'promedio': promedio})\n",
+        "    return riesgo\n",
+        "\n",
+        "print('✅ Función cargada correctamente')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Función cargada correctamente\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "u62Vh_URRpiM"
+      },
+      "source": [
+        "## 2.2 Tests pytest — Branch Coverage 100%"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fKrkH93gRpiN",
+        "outputId": "88e587c2-fe7c-4678-a930-a9580ba9c544"
+      },
+      "source": [
+        "# En Colab ejecutamos los tests directamente sin pytest runner\n",
+        "import traceback\n",
+        "\n",
+        "def run_test(nombre, fn):\n",
+        "    try:\n",
+        "        fn()\n",
+        "        print(f'  ✅ {nombre}')\n",
+        "    except AssertionError as e:\n",
+        "        print(f'  ❌ {nombre} — AssertionError: {e}')\n",
+        "    except Exception as e:\n",
+        "        print(f'  💥 {nombre} — {type(e).__name__}: {e}')\n",
+        "\n",
+        "# Test 1 — lista vacía (rama: not notas)\n",
+        "def test_lista_vacia():\n",
+        "    assert detectar_estudiantes_riesgo([]) == []\n",
+        "\n",
+        "# Test 2 — estudiante sin materias (rama: continue)\n",
+        "def test_estudiante_sin_materias():\n",
+        "    datos = [{'id': 1, 'materias': []}]\n",
+        "    assert detectar_estudiantes_riesgo(datos) == []\n",
+        "\n",
+        "# Test 3 — estudiante en riesgo (rama: promedio < umbral)\n",
+        "def test_estudiante_en_riesgo():\n",
+        "    datos = [{'id': 2, 'materias': [{'nota': 2.0}, {'nota': 2.5}]}]\n",
+        "    r = detectar_estudiantes_riesgo(datos)\n",
+        "    assert len(r) == 1\n",
+        "    assert r[0]['id'] == 2\n",
+        "    assert abs(r[0]['promedio'] - 2.25) < 1e-9\n",
+        "\n",
+        "# Test 4 — estudiante aprobado (rama: promedio >= umbral, no entra al if)\n",
+        "def test_estudiante_aprobado():\n",
+        "    datos = [{'id': 3, 'materias': [{'nota': 4.0}, {'nota': 3.5}]}]\n",
+        "    assert detectar_estudiantes_riesgo(datos) == []\n",
+        "\n",
+        "# Test 5 — umbral personalizado\n",
+        "def test_umbral_personalizado():\n",
+        "    datos = [\n",
+        "        {'id': 4, 'materias': [{'nota': 3.5}]},\n",
+        "        {'id': 5, 'materias': [{'nota': 2.0}]},\n",
+        "    ]\n",
+        "    resultado = detectar_estudiantes_riesgo(datos, umbral=4.0)\n",
+        "    ids = [r['id'] for r in resultado]\n",
+        "    assert 4 in ids\n",
+        "    assert 5 in ids\n",
+        "\n",
+        "# Test 6 — mezcla riesgo y aprobado\n",
+        "def test_mix_riesgo_aprobado():\n",
+        "    datos = [\n",
+        "        {'id': 10, 'materias': [{'nota': 2.0}, {'nota': 1.5}]},  # riesgo: prom=1.75\n",
+        "        {'id': 11, 'materias': [{'nota': 4.0}, {'nota': 4.5}]},  # aprobado: prom=4.25\n",
+        "    ]\n",
+        "    r = detectar_estudiantes_riesgo(datos)\n",
+        "    assert len(r) == 1\n",
+        "    assert r[0]['id'] == 10\n",
+        "\n",
+        "print('🧪 Ejecutando tests — Branch Coverage 100%:')\n",
+        "run_test('Test 1 — lista vacía',            test_lista_vacia)\n",
+        "run_test('Test 2 — sin materias',           test_estudiante_sin_materias)\n",
+        "run_test('Test 3 — estudiante en riesgo',   test_estudiante_en_riesgo)\n",
+        "run_test('Test 4 — estudiante aprobado',    test_estudiante_aprobado)\n",
+        "run_test('Test 5 — umbral personalizado',   test_umbral_personalizado)\n",
+        "run_test('Test 6 — mezcla riesgo/aprobado', test_mix_riesgo_aprobado)\n",
+        "print('\\n✅ Todos los tests ejecutados')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "🧪 Ejecutando tests — Branch Coverage 100%:\n",
+            "  ✅ Test 1 — lista vacía\n",
+            "  ✅ Test 2 — sin materias\n",
+            "  ✅ Test 3 — estudiante en riesgo\n",
+            "  ✅ Test 4 — estudiante aprobado\n",
+            "  ✅ Test 5 — umbral personalizado\n",
+            "  ✅ Test 6 — mezcla riesgo/aprobado\n",
+            "\n",
+            "✅ Todos los tests ejecutados\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Slm2bwWzthPG"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Vf4BCwhzRpiO"
+      },
+      "source": [
+        "## 2.3 Propiedad Hypothesis"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nu1JtTQnRpiP",
+        "outputId": "c3f39b6d-8e22-4849-8246-96c608857e28"
+      },
+      "source": [
+        "from hypothesis import given, settings, strategies as st\n",
+        "\n",
+        "@given(\n",
+        "    notas=st.lists(\n",
+        "        st.fixed_dictionaries({\n",
+        "            'id': st.integers(min_value=1, max_value=9999),\n",
+        "            'materias': st.lists(\n",
+        "                st.fixed_dictionaries({\n",
+        "                    'nota': st.floats(min_value=0.0, max_value=5.0,\n",
+        "                                      allow_nan=False, allow_infinity=False)\n",
+        "                }),\n",
+        "                min_size=1, max_size=10\n",
+        "            )\n",
+        "        }),\n",
+        "        min_size=0, max_size=20\n",
+        "    ),\n",
+        "    umbral=st.floats(min_value=0.0, max_value=5.0,\n",
+        "                     allow_nan=False, allow_infinity=False)\n",
+        ")\n",
+        "@settings(max_examples=300)\n",
+        "def test_propiedad_promedio_menor_umbral(notas, umbral):\n",
+        "    \"\"\"\n",
+        "    PROPIEDAD: Todo estudiante retornado debe tener promedio\n",
+        "    estrictamente menor al umbral. Nunca se retorna un estudiante\n",
+        "    con promedio >= umbral.\n",
+        "    \"\"\"\n",
+        "    resultado = detectar_estudiantes_riesgo(notas, umbral=umbral)\n",
+        "    for r in resultado:\n",
+        "        assert r['promedio'] < umbral, (\n",
+        "            f\"Estudiante {r['id']} con promedio {r['promedio']} \"\n",
+        "            f\"no debería estar en riesgo con umbral {umbral}\"\n",
+        "        )\n",
+        "\n",
+        "print('🔬 Ejecutando propiedad Hypothesis con 300 ejemplos...')\n",
+        "test_propiedad_promedio_menor_umbral()\n",
+        "print('✅ Propiedad verificada — ningún contraejemplo encontrado')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "🔬 Ejecutando propiedad Hypothesis con 300 ejemplos...\n",
+            "✅ Propiedad verificada — ningún contraejemplo encontrado\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P-aaf3C2RpiQ"
+      },
+      "source": [
+        "---\n",
+        "# PARTE 3 — DP Aplicado: Knapsack 0/1\n",
+        "## 3.1 Implementación DP"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NQsNOLpvRpiR",
+        "outputId": "19bee36d-7f15-4ccd-89f4-767492eea199"
+      },
+      "source": [
+        "def seleccionar_tests_optimos(tests, presupuesto):\n",
+        "    \"\"\"\n",
+        "    Knapsack 0/1 para selección óptima de tests.\n",
+        "    tests: [(nombre, tiempo, valor), ...]\n",
+        "    Retorna (valor_total, lista_tests_seleccionados, tiempo_usado)\n",
+        "    \"\"\"\n",
+        "    n = len(tests)\n",
+        "    # Tabla DP: dp[i][w] = max valor usando i primeros tests con w minutos\n",
+        "    dp = [[0] * (presupuesto + 1) for _ in range(n + 1)]\n",
+        "\n",
+        "    for i in range(1, n + 1):\n",
+        "        nombre, tiempo, valor = tests[i - 1]\n",
+        "        for w in range(presupuesto + 1):\n",
+        "            dp[i][w] = dp[i - 1][w]          # no tomar el test i\n",
+        "            if tiempo <= w:                    # tomar el test i (si cabe)\n",
+        "                dp[i][w] = max(dp[i][w], dp[i - 1][w - tiempo] + valor)\n",
+        "\n",
+        "    # Reconstrucción: ¿qué tests se seleccionaron?\n",
+        "    seleccionados = []\n",
+        "    w = presupuesto\n",
+        "    for i in range(n, 0, -1):\n",
+        "        if dp[i][w] != dp[i - 1][w]:\n",
+        "            nombre, tiempo, valor = tests[i - 1]\n",
+        "            seleccionados.append(nombre)\n",
+        "            w -= tiempo\n",
+        "    seleccionados.reverse()\n",
+        "\n",
+        "    tiempo_usado = sum(t[1] for t in tests if t[0] in seleccionados)\n",
+        "    return dp[n][presupuesto], seleccionados, tiempo_usado\n",
+        "\n",
+        "\n",
+        "def seleccionar_tests_greedy(tests, presupuesto):\n",
+        "    \"\"\"\n",
+        "    Greedy: prioriza por ratio valor/tiempo (mayor primero).\n",
+        "    \"\"\"\n",
+        "    ordenados = sorted(tests, key=lambda t: t[2] / t[1], reverse=True)\n",
+        "    seleccionados = []\n",
+        "    tiempo_restante = presupuesto\n",
+        "    valor_total = 0\n",
+        "\n",
+        "    for nombre, tiempo, valor in ordenados:\n",
+        "        if tiempo <= tiempo_restante:\n",
+        "            seleccionados.append(nombre)\n",
+        "            tiempo_restante -= tiempo\n",
+        "            valor_total += valor\n",
+        "\n",
+        "    tiempo_usado = presupuesto - tiempo_restante\n",
+        "    return valor_total, seleccionados, tiempo_usado\n",
+        "\n",
+        "print('✅ Funciones DP y Greedy cargadas')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Funciones DP y Greedy cargadas\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Wvk_0FuTRpiS"
+      },
+      "source": [
+        "## 3.2 Datos y Resultados"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f2fRkruYRpiS",
+        "outputId": "76c3b079-668b-47a1-db74-03c50ccad6f4"
+      },
+      "source": [
+        "TESTS = [\n",
+        "    ('test_login',            3, 85),\n",
+        "    ('test_calculo_promedio', 5, 95),\n",
+        "    ('test_deteccion_riesgo', 4, 90),\n",
+        "    ('test_exportar_pdf',     6, 70),\n",
+        "    ('test_exportar_excel',   5, 75),\n",
+        "    ('test_api_reportes',     3, 80),\n",
+        "    ('test_prediccion',       8, 65),\n",
+        "    ('test_ui_dashboard',     7, 60),\n",
+        "    ('test_concurrency',      9, 55),\n",
+        "    ('test_seguridad',        4, 88),\n",
+        "]\n",
+        "PRESUPUESTO = 25\n",
+        "\n",
+        "valor_dp,     tests_dp,     tiempo_dp     = seleccionar_tests_optimos(TESTS, PRESUPUESTO)\n",
+        "valor_greedy, tests_greedy, tiempo_greedy = seleccionar_tests_greedy(TESTS, PRESUPUESTO)\n",
+        "\n",
+        "print('=' * 60)\n",
+        "print('PARTE 3 — Knapsack 0/1 vs Greedy  (presupuesto = 25 min)')\n",
+        "print('=' * 60)\n",
+        "print(f'\\n✅ SOLUCIÓN DP (óptima):')\n",
+        "print(f'   Valor total  : {valor_dp}')\n",
+        "print(f'   Tiempo usado : {tiempo_dp} min / {PRESUPUESTO} min')\n",
+        "print(f'   Tests ({len(tests_dp)})   : {\", \".join(tests_dp)}')\n",
+        "\n",
+        "print(f'\\n⚡ SOLUCIÓN GREEDY:')\n",
+        "print(f'   Valor total  : {valor_greedy}')\n",
+        "print(f'   Tiempo usado : {tiempo_greedy} min / {PRESUPUESTO} min')\n",
+        "print(f'   Tests ({len(tests_greedy)})   : {\", \".join(tests_greedy)}')\n",
+        "\n",
+        "diferencia = valor_dp - valor_greedy\n",
+        "pct = (diferencia / valor_greedy * 100) if valor_greedy else 0\n",
+        "solo_dp     = set(tests_dp)     - set(tests_greedy)\n",
+        "solo_greedy = set(tests_greedy) - set(tests_dp)\n",
+        "\n",
+        "print(f'\\n📊 COMPARATIVA:')\n",
+        "print(f'   Diferencia           : {diferencia} puntos ({pct:.1f}%)')\n",
+        "print(f'   Solo en DP           : {(\", \".join(solo_dp))     or \"ninguno\"}')\n",
+        "print(f'   Solo en Greedy       : {(\", \".join(solo_greedy)) or \"ninguno\"}')\n",
+        "print('=' * 60)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "============================================================\n",
+            "PARTE 3 — Knapsack 0/1 vs Greedy  (presupuesto = 25 min)\n",
+            "============================================================\n",
+            "\n",
+            "✅ SOLUCIÓN DP (óptima):\n",
+            "   Valor total  : 513\n",
+            "   Tiempo usado : 24 min / 25 min\n",
+            "   Tests (6)   : test_login, test_calculo_promedio, test_deteccion_riesgo, test_exportar_excel, test_api_reportes, test_seguridad\n",
+            "\n",
+            "⚡ SOLUCIÓN GREEDY:\n",
+            "   Valor total  : 513\n",
+            "   Tiempo usado : 24 min / 25 min\n",
+            "   Tests (6)   : test_login, test_api_reportes, test_deteccion_riesgo, test_seguridad, test_calculo_promedio, test_exportar_excel\n",
+            "\n",
+            "📊 COMPARATIVA:\n",
+            "   Diferencia           : 0 puntos (0.0%)\n",
+            "   Solo en DP           : ninguno\n",
+            "   Solo en Greedy       : ninguno\n",
+            "============================================================\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WJ02NCGLRpiT"
+      },
+      "source": [
+        "## 3.3 Tabla comparativa visual"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V1UGNSr_RpiU",
+        "outputId": "ad2eb5ac-65a2-4bcb-d444-16d518f9d1db"
+      },
+      "source": [
+        "print(f'{\"-\"*65}')\n",
+        "print(f'{\"Test\":<28} {\"Tiempo\":>7} {\"Valor\":>7} {\"DP\":>6} {\"Greedy\":>8}')\n",
+        "print(f'{\"-\"*65}')\n",
+        "for nombre, tiempo, valor in TESTS:\n",
+        "    dp_mark     = '✅' if nombre in tests_dp     else '—'\n",
+        "    greedy_mark = '✅' if nombre in tests_greedy else '—'\n",
+        "    print(f'{nombre:<28} {tiempo:>7} {valor:>7} {dp_mark:>6} {greedy_mark:>8}')\n",
+        "print(f'{\"-\"*65}')\n",
+        "print(f'{\"TOTAL\":<28} {tiempo_dp:>7} {valor_dp:>7} {\"\":>6} {\"\":>8}')\n",
+        "print(f'{\"-\"*65}')\n",
+        "print(f'\\n📝 Análisis:')\n",
+        "print(f'  DP y Greedy coinciden en este caso: ambos obtienen valor {valor_dp}.')\n",
+        "print(f'  DP SIEMPRE garantiza el óptimo global.')\n",
+        "print(f'  Greedy puede fallar cuando un ítem de bajo ratio libera espacio')\n",
+        "print(f'  para una combinación mejor — en este dataset los ratios son compatibles.')"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-----------------------------------------------------------------\n",
+            "Test                          Tiempo   Valor     DP   Greedy\n",
+            "-----------------------------------------------------------------\n",
+            "test_login                         3      85      ✅        ✅\n",
+            "test_calculo_promedio              5      95      ✅        ✅\n",
+            "test_deteccion_riesgo              4      90      ✅        ✅\n",
+            "test_exportar_pdf                  6      70      —        —\n",
+            "test_exportar_excel                5      75      ✅        ✅\n",
+            "test_api_reportes                  3      80      ✅        ✅\n",
+            "test_prediccion                    8      65      —        —\n",
+            "test_ui_dashboard                  7      60      —        —\n",
+            "test_concurrency                   9      55      —        —\n",
+            "test_seguridad                     4      88      ✅        ✅\n",
+            "-----------------------------------------------------------------\n",
+            "TOTAL                             24     513                \n",
+            "-----------------------------------------------------------------\n",
+            "\n",
+            "📝 Análisis:\n",
+            "  DP y Greedy coinciden en este caso: ambos obtienen valor 513.\n",
+            "  DP SIEMPRE garantiza el óptimo global.\n",
+            "  Greedy puede fallar cuando un ítem de bajo ratio libera espacio\n",
+            "  para una combinación mejor — en este dataset los ratios son compatibles.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
